@@ -29,7 +29,7 @@ export default function Navbar() {
   ];
   return (
     <div className="fixed z-[20] w-full ">
-      <div className=" px-[5%] w-full bg-[#000000] h-[5vh] text-center text-white text-xs flex justify-between   items-center text-semibold">
+      <div className=" px-[5%] w-full bg-[#F1CEDD] h-[5vh] text-center text-black text-xs flex justify-between   items-center text-semibold">
         <div className="flex gap-5  items-center">
           {" "}
           <div className="flex items-center gap-1">
@@ -47,7 +47,7 @@ export default function Navbar() {
             <h6 className="sm:text-sm text-xs">example@Wellnez.com</h6>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-[18px] bg-[#00000063]">
+        <div className="flex items-center gap-2 text-[18px] ">
           <FaFacebookF />
           <FaInstagram />
           <FaFacebookF />
@@ -56,11 +56,11 @@ export default function Navbar() {
           <FaInstagram />
         </div>
       </div>
-      <div className="flex justify-between items-center w-full sm:h-[10vh] h-[8vh] px-[5%] bg-[#ffffff]">
+      <div className="flex justify-between items-center w-full sm:h-[10vh] h-[8vh] px-[5%] bg-[black]">
         <div>
-          <img className="sm:w-[100px] w-[70px]" src="/logo.png" />
+          <img className="sm:w-[100px] w-[70px]" src="/glowlogo.png" />
         </div>
-        <nav className="flex items-center gap-7">
+        <nav className="flex items-center text-white gap-7">
           <ul className="sm:flex hidden gap-7 items-center  text-sm uppercase">
             <li>Home</li>
             <li>About us</li>
@@ -70,7 +70,7 @@ export default function Navbar() {
           </ul>
           <div className="flex gap-7 items-center">
             <CiSearch className="text-[30px]" />
-            <button className=" sm:flex hidden py-2.5 px-6  text-white bg-black">
+            <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
               Book Now
             </button>
             <HiOutlineMenuAlt3 className="text-[35px]" />

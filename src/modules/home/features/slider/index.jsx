@@ -95,16 +95,16 @@ const Images = ({ imgIndex }) => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-              className="aspect-video w-full h-[800px]  object-cover"
+              className="aspect-video w-full h-[650px]  object-cover"
             />
-            <motion.div
+            {/* <motion.div
               transition={SPRING_OPTIONS}
               className={`w-full -mt-[15%] text-center h-[100px] bg-[#000000] flex items-center justify-center text-white ${
                 imgIndex === idx ? "text-[red] text-bold bg-black" : ""
               }`}
             >
               {img.text}
-            </motion.div>
+            </motion.div> */}
           </div>
         );
       })}
