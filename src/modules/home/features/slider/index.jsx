@@ -55,7 +55,7 @@ export const Slider = () => {
   };
 
   return (
-    <div className="relative overflow-hidden mt-[15vh]">
+    <div className="relative overflow-hidden mt-[15vh] ">
       <motion.div
         drag="x"
         dragConstraints={{
@@ -87,7 +87,7 @@ const Images = ({ imgIndex }) => {
         return (
           <div
             key={idx}
-            className="flex flex-col items-center w-1/3 h-[850px] shrink-0"
+            className="flex flex-col items-center w-1/3 h-[650px] shrink-0"
           >
             <motion.div
               style={{

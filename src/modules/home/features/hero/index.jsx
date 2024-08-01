@@ -10,6 +10,7 @@ export default function Hero() {
       <div className="relative w-full  overflow-x-hidden ">
         <Navbar />
         <Slider />
+      <Banner/>
       </div>
     </div>
   );

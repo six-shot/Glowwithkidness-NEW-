@@ -11,7 +11,7 @@ export default function Home() {
     <div className="relative">
       <Hero />
       <div className="max-w-[1440px] mx-auto">
-        {" "}
+
         <About />
       </div>
       <Gallery />
