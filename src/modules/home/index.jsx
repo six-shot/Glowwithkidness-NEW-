@@ -11,11 +11,13 @@ export default function Home() {
     <div className="relative">
       <Hero />
       <div className="max-w-[1440px] mx-auto">
-
         <About />
       </div>
       <Gallery />
-      <Services/>
+      <div className="max-w-[1440px] mx-auto">
+        {" "}
+        <Services />
+      </div>
 
       {/* <div className="fixed bottom-[8%] py-3 px-5 rounded-[50px] right-[2%] bg-[#F1CEDD] font-semibold flex gap-2 items-center">
         <FaCalendarDays />
