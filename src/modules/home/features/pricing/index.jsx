@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 export default function Pricing() {
   return (
-    <div className="relative w-full h-[100vh]" id="home">
+    <div className="relative w-full h-[120vh]" id="home">
       <img
         className="absolute  object-cover left-0 w-full h-full z-10"
         src="/pricing.jpg"
@@ -99,7 +99,7 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <div className="absolute inset-0 bg-primary h-screen  opacity-40 z-[10] "></div>
+      <div className="absolute inset-0 bg-primary h-[120vh]  opacity-40 z-[10] "></div>
     </div>
   );
 }
