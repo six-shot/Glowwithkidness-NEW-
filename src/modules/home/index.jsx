@@ -51,8 +51,8 @@ export default function Home() {
       <Contact />
       <Footer />
       {showTopButton && (
-        <div className="fixed bottom-[10%] right-[4%] bg-primary w-[45px] h-[45px] flex justify-center items-center rounded-full z-[50]">
-          <button className="text-white text-[20px]" onClick={scrollToTop}>
+        <div className="fixed bottom-[10%] right-[4%] bg-primary w-[45px] h-[45px] flex justify-center items-center rounded-full z-[50] text-black">
+          <button className="text-[20px]" onClick={scrollToTop}>
             <IoMdArrowUp />
           </button>
         </div>
