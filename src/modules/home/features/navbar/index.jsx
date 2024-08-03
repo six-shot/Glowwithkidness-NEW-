@@ -28,7 +28,7 @@ export default function Navbar() {
     { title: "Contact Us" },
   ];
   return (
-    <div className="fixed z-[20] w-full ">
+    <div className="fixed z-[50] w-full ">
       <div className="bg-[#F1CEDD] w-full">
         <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[5vh] text-center text-black text-xs flex justify-between   items-center text-semibold">
           <div className="flex gap-5  items-center">
