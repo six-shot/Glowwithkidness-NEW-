@@ -36,16 +36,18 @@ export default function Navbar() {
             <div className="flex items-center gap-1">
               <CiLocationOn className="text-[20px]" />
               <h6 className="sm:text-sm text-xs">
-                121 King St. Melbourne VIC 3000, Australia
+                3702 Frankford Rd, Dallas TX, 75287
               </h6>
             </div>
             <div className="flex items-center gap-1">
               <FiPhone className="text-[16px]" />
-              <h6 className="sm:text-sm text-xs">(+256) 3254 2598</h6>
+              <h6 className="sm:text-sm text-xs">(469) 670-0124</h6>
             </div>
             <div className="flex items-center gap-1">
               <MdOutlineEmail className="text-[20px]" />
-              <h6 className="sm:text-sm text-xs">example@Wellnez.com</h6>
+              <h6 className="sm:text-sm text-xs">
+                inquiry@glowwithkindness.com
+              </h6>
             </div>
           </div>
           <div className="flex items-center gap-2 text-[18px] ">
