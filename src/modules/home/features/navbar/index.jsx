@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { CiLocationOn,CiSearch } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import {
   containerVars,
   menuVars,
@@ -51,13 +51,12 @@ export default function Navbar() {
               </h6>
             </div>
           </div>
-          <div className="flex items-center gap-2 text-[18px] ">
+          <div className="flex items-center gap-4 text-[20px] ">
             <FaFacebookF />
             <FaInstagram />
-            <FaFacebookF />
-            <FaInstagram />
-            <FaFacebookF />
-            <FaInstagram />
+            <FaTiktok />
+            <FaTwitter />
+           
           </div>
         </div>
         <div className="bg-black">
