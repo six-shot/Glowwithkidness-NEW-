@@ -46,7 +46,7 @@ export default function Home() {
       <div className="max-w-[1440px] mx-auto">
         <Services />
       </div>
-      <Pricing />
+     
       <Testimonial />
       <Contact />
       <Footer />
