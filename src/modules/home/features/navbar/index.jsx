@@ -30,7 +30,7 @@ export default function Navbar() {
   return (
     <div className="fixed z-[50] w-full ">
       <div className="bg-[#F1CEDD] w-full">
-        <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[5vh] text-center text-black text-xs flex justify-between   items-center text-semibold">
+        <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[6vh] text-center text-black text-xs flex justify-between   items-center text-semibold">
           <div className="flex gap-5  items-center">
             {" "}
             <div className="flex items-center gap-1">
@@ -58,7 +58,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="bg-black">
-          <div className="max-w-[1440px] mx-auto flex justify-between items-center w-full sm:h-[10vh] h-[8vh] px-[5%] ">
+          <div className="max-w-[1440px] mx-auto flex justify-between items-center w-full sm:h-[13vh] h-[8vh] px-[5%] ">
             <div>
               <img className="sm:w-[100px] w-[70px]" src="/glowlogo.png" />
             </div>
