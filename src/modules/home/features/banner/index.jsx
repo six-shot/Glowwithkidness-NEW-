@@ -3,8 +3,8 @@ import React from "react";
 export default function Banner() {
   return (
     <div className=" px-[5%] py-[4%] mb-[2%]">
-      <div className="grid sm:grid-cols-3 grid-cols-1   h-[180px] ">
-        <div className="col-span-1 h-full">
+      <div className="grid sm:grid-cols-3 grid-cols-1 gap-10   h-[300px] ">
+        <div className="col-span-1 h-full bg-primary px-[5%] py-[8%] rounded-[12px]">
           <div className="flex justify-between flex-col h-full ">
             <h4 className="text-[22px] font-semibold leading-[28px]">
               SKINPURE NEW <br />
@@ -18,7 +18,7 @@ export default function Banner() {
             </div>
           </div>
         </div>
-        <div className="col-span-1 h-full">
+        <div className="col-span-1 h-full bg-primary px-[5%] py-[8%] rounded-[12px]">
           <div className="flex justify-between flex-col h-full ">
             <h4 className="text-[22px] font-semibold leading-[28px]">
               SKINPURE NEW <br />
@@ -32,7 +32,7 @@ export default function Banner() {
             </div>
           </div>
         </div>
-        <div className="col-span-1 h-full">
+        <div className="col-span-1 h-full bg-primary px-[5%] py-[8%] rounded-[12px]">
           <div className="flex justify-between flex-col h-full ">
             <h4 className="text-[22px] font-semibold leading-[28px]">
               SKINPURE NEW <br />
