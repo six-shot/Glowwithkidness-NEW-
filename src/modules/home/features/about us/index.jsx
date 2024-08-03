@@ -33,11 +33,14 @@ export default function About() {
             highest standard of hygiene and cleanliness within our facility.
           </p>
           <p className="mt-4 sm:w-[600px]">
-            Kindly read our <span className="text-primary">terms and conditions</span> to better
-            understand how we operate. We hope you&apos;ll visit us soon and
-            experience the difference our salon can make.
+            Kindly read our{" "}
+            <span className="text-primary underline">terms and conditions</span>{" "}
+            to better understand how we operate. We hope you&apos;ll visit us
+            soon and experience the difference our salon can make.
           </p>
-        
+          <p className="mt-4 sm:w-[600px]">
+            Thank you for choosing us, and we look forward to serving you!
+          </p>
         </div>
       </div>
     </div>

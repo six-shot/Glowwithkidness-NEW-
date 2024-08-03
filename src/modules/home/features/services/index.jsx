@@ -6,10 +6,10 @@ export default function Services() {
     <div className="px-[5%] py-[5%]">
       <div>
         <div className="flex flex-col justify-center items-center text-center">
-          <h6 className="text-base text-black font-medium">
-            SERVICE OF AND FASHION
+          <h6 className="text-base text-black font-medium uppercase">
+           Hair guide
           </h6>
-          <h4 className="text-[40px]">Discover Our New Spa</h4>
+          <h4 className="text-[40px]">Protect your braids</h4>
         </div>
       </div>
       <div className="grid grid-cols-3 items-center  mt-[5%]">
