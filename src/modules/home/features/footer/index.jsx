@@ -6,13 +6,13 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 export default function Footer() {
   return (
-    <div className="relative w-full h-[40vh]" id="home">
+    <div className="relative w-full h-[60vh]" id="home">
       <img
         className="absolute  object-cover left-0 w-full h-full z-10"
         src="/footer.jpg"
       />
       <div className="absolute top-0 left-0 z-20 w-full">
-        <div className="max-w-[1440px] mx-auto py-[3%] px-[5%]">
+        <div className="max-w-[1440px] mx-auto pt-[5%] pb-[2%] px-[5%]">
           <div className="grid grid-cols-4 gap-10">
             <div className="col-span-1">
               <Link href="/">
@@ -119,9 +119,7 @@ export default function Footer() {
                   <img src="/gal.jpg " className="w-full h-full object-cover" />
                 </div>
 
-                <div className="col-span-1 w-full h-full">
-                  <img src="/gal.jpg " className="w-full h-full object-cover" />
-                </div>
+              
               </div>
             </div>
           </div>

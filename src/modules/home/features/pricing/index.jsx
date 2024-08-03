@@ -8,7 +8,7 @@ export default function Pricing() {
         src="/pricing.jpg"
       />
       <div className="absolute top-0 left-0 z-20 w-full">
-        <div className="max-w-[1440px] mx-auto py-[7%] px-[5%]">
+        <div className="max-w-[1440px] mx-auto pt-[5%] px-[5%]">
           <div className="flex gap-2 items-center">
             <h5 className="">EXPERIENCE WELLNEZ</h5>
             <h5 className="bg-primary px-5 py-1">25 YEARS</h5>

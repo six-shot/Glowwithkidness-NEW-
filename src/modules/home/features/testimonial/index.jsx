@@ -3,9 +3,9 @@ import { FaCheckCircle } from "react-icons/fa";
 import { PiHairDryer } from "react-icons/pi";
 export default function Testimonial() {
   return (
-    <div className="relative w-full h-[70vh] flex items-center" id="home">
+    <div className="relative w-full h-[100vh] flex items-center" id="home">
       <div className="absolute top-0 left-0 z-20 w-full">
-        <div className="max-w-[1440px] mx-auto py-[7%] px-[5%]">
+        <div className="max-w-[1440px] mx-auto pt-[5%] px-[5%]">
          
           <div className="relative bg-primary w-full flex justify-center items-center flex-col h-[350px]  px-[5%]">
             <div className="absolute -top-[15%] flex items-center w-full justify-center ">

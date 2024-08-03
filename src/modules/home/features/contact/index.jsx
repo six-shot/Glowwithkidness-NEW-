@@ -3,14 +3,14 @@ import { SlEarphonesAlt } from "react-icons/sl";
 import { IoIosContact } from "react-icons/io";
 export default function Contact() {
   return (
-    <div className="relative w-full h-[80vh]" id="home">
+    <div className="relative w-full h-[100vh] " id="home">
       <img
-        className="absolute  object-cover left-0 w-full h-full z-10"
+        className="absolute  object-cover left-0 w-full h-full z-10 "
         src="/pricing.jpg"
       />
       <div className="absolute top-0 left-0 z-20 w-full">
-        <div className="max-w-[1440px] mx-auto py-[7%] px-[5%]">
-          <div className="grid grid-cols-3  h-[600px] ">
+        <div className="max-w-[1440px] mx-auto pt-[5%]  px-[5%]">
+          <div className="grid grid-cols-3  h-[600px]">
             <div className="col-span-1 w-full h-full bg-primary flex flex-col justify-center items-center ">
               <h4 className="uppercase text-[50px]">Our Timing</h4>
               <div className="flex flex-col ">
@@ -81,7 +81,7 @@ export default function Contact() {
         </div>
       
       </div>
-      <div className="absolute inset-0 bg-primary h-[80vh]  opacity-40 z-[10] "></div>
+      <div className="absolute inset-0 bg-primary h-[100vh]  opacity-40 z-[10] "></div>
     </div>
   );
 }
