@@ -129,3 +129,5 @@ const Images = ({ imgIndex }) => {
 //     </div>
 //   );
 // };
+
+

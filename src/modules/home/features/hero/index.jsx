@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "../navbar";
+import {Slider} from "../slider/index"
 
-import Banner from "../banner";
-import { Slider } from "../slider";
 
 export default function Hero() {
   return (
     <div >
       <div className="relative w-full  overflow-x-hidden ">
-        <Navbar />
+      <Navbar/>
         <Slider />
      
       </div>

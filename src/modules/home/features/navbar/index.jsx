@@ -23,6 +23,7 @@ export default function Navbar() {
   const nav = [
     { title: "Home" },
     { title: "About Us" },
+    { title: "Book Appointment" },
     { title: "Hair Guide" },
     { title: "For You" },
     { title: "Contact Us" },

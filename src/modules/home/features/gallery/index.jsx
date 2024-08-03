@@ -237,11 +237,9 @@ const Images = ({ imgIndex }) => {
               width: "600px",
               height: "400px", // Set the height of the images here
             }}
-            animate={{
-              scale: imgIndex === idx ? 1 : 0.9,
-            }}
+            
             transition={SPRING_OPTIONS}
-            className="shrink-0 bg-neutral-800 object-cover relative"
+            className="shrink-0 bg-neutral-800 object-cover relative "
           >
           
           </motion.div>
