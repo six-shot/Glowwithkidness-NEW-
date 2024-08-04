@@ -109,10 +109,13 @@ export default function Navbar() {
                 </Link>
               </ul>
               <div className="sm:flex hidden gap-7 items-center">
-                <CiSearch className="text-[30px]" />
-                <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
-                  Book Now
-                </button>
+                {/* <CiSearch className="text-[30px]" /> */}
+                <Link to="/booking">
+                  <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
+                    Book Now
+                  </button>
+                </Link>
+
                 <HiOutlineMenuAlt3
                   onClick={() => setToggle(!toggle)}
                   className="text-[35px] cursor-pointer"

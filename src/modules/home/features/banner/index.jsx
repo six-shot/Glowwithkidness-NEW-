@@ -88,6 +88,7 @@ export default function Banner() {
             ))}
           </Marquee>
         </div>
+      
       </div>
     </div>
   );
