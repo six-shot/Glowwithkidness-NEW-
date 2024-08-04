@@ -6,12 +6,15 @@ import { CiLocationOn,CiSearch } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
+import { IoCloseOutline } from "react-icons/io5";
 import {
   containerVars,
   menuVars,
   mobileLinkVars,
 } from "../../../../utils/motion";
 export default function Navbar() {
+  const [toggle, setToggle] = useState(false);
+
   const [open, setOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -33,7 +36,6 @@ export default function Navbar() {
       <div className="bg-[#F1CEDD] w-full">
         <div className="h-[4vh] w-full sm:hidden flex  justify-center items-center">
           <div className="flex items-center gap-1">
-            
             <h6 className="sm:text-sm text-xs">inquiry@glowwithkindness.com</h6>
           </div>
         </div>
@@ -82,7 +84,10 @@ export default function Navbar() {
                 <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
                   Book Now
                 </button>
-                <HiOutlineMenuAlt3 className="text-[35px]" />
+                <HiOutlineMenuAlt3
+                  onClick={() => setToggle(!toggle)}
+                  className="text-[35px]"
+                />
               </div>
             </nav>
 
@@ -92,6 +97,18 @@ export default function Navbar() {
                 className="text-[30px] text-white"
               />
             </div>
+          </div>
+        </div>
+        <div
+          className={`${
+            toggle ? "flex flex-col" : "hidden"
+          } py-6 backdrop-blur-[5px] bg-white fixed top-0 right-0 min-w-[350px] px-[1%] cursor-pointer h-screen  sidebar z-[100]`}
+        >
+          <div
+            onClick={() => setToggle(!toggle)}
+            className="w-[60px] h-[60px] bg-primary flex items-center justify-center text-[24px] rounded-full"
+          >
+            <IoCloseOutline />
           </div>
         </div>
         <div>
