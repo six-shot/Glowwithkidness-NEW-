@@ -9,8 +9,9 @@ import Banner from "./features/banner";
 import Testimonial from "./features/testimonial";
 import Contact from "./features/contact";
 import Footer from "./features/footer";
+import transition from "../../utils/transition";
 
-export default function Home() {
+const Home = () => {
   const [showTopButton, setShowTopButton] = useState(false);
 
   const handleScroll = () => {
@@ -62,4 +63,5 @@ export default function Home() {
       )}
     </div>
   );
-}
+};
+export default transition(Home);

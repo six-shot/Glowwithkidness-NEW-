@@ -1,8 +1,8 @@
 import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
 import { Link } from "react-router-dom";
-
-export default function About() {
+import transition from "../../../../utils/transition";
+const About = () => {
   return (
     <div>
       <NavFootLayout>
@@ -56,4 +56,5 @@ export default function About() {
       </NavFootLayout>
     </div>
   );
-}
+};
+export default transition(About);
