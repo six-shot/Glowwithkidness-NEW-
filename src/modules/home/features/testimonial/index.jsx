@@ -6,10 +6,10 @@ export default function Testimonial() {
     <div className="relative w-full h-[100vh] flex items-center" id="home">
       <div className="absolute top-0 left-0 z-20 w-full">
         <div className="max-w-[1440px] mx-auto pt-[5%] px-[5%]">
-          <div className="flex items-center justify-center flex-col mb-[5%]">
+          <div className="flex items-center justify-center flex-col sm:mb-[5%] mb-[14%]">
             <h5 className="tracking-[3px] font-medium">OUR CLIENTS</h5>
 
-            <h4 className="text-[40px] font-medium">GLowithkindness Customers</h4>
+            <h4 className="sm:text-[40px]  text-[30px] text-center font-medium">GLowithkindness Customers</h4>
           </div>
           <div className="relative bg-primary w-full flex justify-center items-center flex-col h-[350px]  px-[5%]">
             <div className="absolute -top-[15%] flex items-center w-full justify-center ">
@@ -19,7 +19,7 @@ export default function Testimonial() {
                 </div>
               </div>
             </div>
-            <h4 className="text-center italic text-[24px] mt-[4%]">
+            <h4 className="text-center italic sm:text-[24px] text-[20px] mt-[4%]">
               “For a couple of times, I've been going to Kindness for my braids.
               I will continue to visit her no matter where I travel in the city.
               She does a fantastic job!”

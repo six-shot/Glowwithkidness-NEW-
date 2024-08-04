@@ -7,9 +7,9 @@ export default function Services() {
       <div>
         <div className="flex flex-col justify-center items-center text-center">
           <h6 className="text-base text-black font-medium uppercase">
-           Hair guide
+            Hair guide
           </h6>
-          <h4 className="text-[40px]">Protect your braids</h4>
+          <h4 className="sm:text-[40px] text-[30px] sm:leding-[40px] leading-[30px]">Protect your braids</h4>
         </div>
       </div>
       <div className="grid sm:grid-cols-3 col-span-1 items-center  mt-[5%]">
@@ -66,7 +66,7 @@ export default function Services() {
           </div>
         </div>
 
-        <div className="col-span-1">
+        <div className="col-span-1 sm:my-0 my-[4%]">
           <div className="flex justify-center items-center">
             <img src="shape.png" alt="shape.png" />
           </div>
