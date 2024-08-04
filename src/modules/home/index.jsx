@@ -48,11 +48,14 @@ export default function Home() {
       </div>
       <Testimonial />
       <Contact />
-        <Footer /> 
-     
+      <Footer />
+
       {showTopButton && (
-        <div className="fixed bottom-[10%] border-[4px] border-white right-[4%] bg-primary w-[50px] h-[50px] flex justify-center items-center rounded-full z-[50] text-black">
-          <button className="text-[20px]" onClick={scrollToTop}>
+        <div
+          onClick={scrollToTop}
+          className="fixed cursor-pointer bottom-[10%] border-[4px] border-white right-[4%] bg-primary w-[50px] h-[50px] flex justify-center items-center rounded-full z-[50] text-black"
+        >
+          <button className="text-[20px]">
             <IoMdArrowUp />
           </button>
         </div>

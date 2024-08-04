@@ -1,10 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { HiMenuAlt4, HiOutlineMenuAlt2, HiOutlineMenuAlt3 } from "react-icons/hi";
+import { FaLocationDot } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { CiLocationOn,CiSearch } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaFacebookF, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 import {
@@ -114,7 +115,7 @@ export default function Navbar() {
                 </button>
                 <HiOutlineMenuAlt3
                   onClick={() => setToggle(!toggle)}
-                  className="text-[35px]"
+                  className="text-[35px] cursor-pointer"
                 />
               </div>
             </nav>
@@ -132,11 +133,43 @@ export default function Navbar() {
             toggle ? "flex flex-col" : "hidden"
           } py-6 backdrop-blur-[5px] bg-white fixed top-0 right-0 min-w-[350px] px-[1%] cursor-pointer h-screen  sidebar z-[100]`}
         >
-          <div
-            onClick={() => setToggle(!toggle)}
-            className="w-[60px] h-[60px] bg-primary flex items-center justify-center text-[24px] rounded-full"
-          >
-            <IoCloseOutline />
+          <div className="flex justify-end">
+            {" "}
+            <div
+              onClick={() => setToggle(!toggle)}
+              className="w-[50px] h-[50px] bg-primary flex items-center justify-center text-[24px] rounded-full"
+            >
+              <IoCloseOutline />
+            </div>
+          </div>
+          <div className="flex flex-col gap-5 mt-8">
+            <div className="flex items-center gap-3 ">
+              <div className="w-[40px] h-[40px] bg-primary rounded-full flex justify-center items-center">
+                {" "}
+                <MdOutlineLocationOn className="text-[20px]" />
+              </div>
+              <h6 className="sm:text-sm text-xs  font-medium">
+                3702 Frankford Rd, Dallas TX, 75287
+              </h6>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-[40px] h-[40px] bg-primary rounded-full flex justify-center items-center">
+                <FiPhone className="text-[20px]" />
+              </div>
+
+              <h6 className="sm:text-sm text-xs  font-medium">
+                (469) 670-0124
+              </h6>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-[40px] h-[40px] bg-primary rounded-full flex justify-center items-center">
+                <MdOutlineEmail className="text-[20px]" />
+              </div>
+
+              <h6 className="sm:text-sm text-xs  font-medium">
+                inquiry@glowwithkidness.com
+              </h6>
+            </div>
           </div>
         </div>
         <div>
