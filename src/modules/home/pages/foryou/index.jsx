@@ -1,12 +1,16 @@
 import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
 import { Link } from "react-router-dom";
-
+import { motion } from "framer-motion";
 export default function ForYou() {
   return (
-    <div>
+  <motion.div
+        >
       <NavFootLayout>
-        <div className="w-full pt-[14vh]  sm:pt-[19vh]">
+        <div
+          
+          className="w-full pt-[14vh]  sm:pt-[19vh] "
+        >
           <img
             src="/about.jpg"
             className="w-full sm:h-[400px] h-[300px] object-right object-cover"
@@ -45,16 +49,18 @@ export default function ForYou() {
                   us to discuss an appointment.
                 </li>
               </ol>
-              <Link to="/booking">    <div className="flex justify-center items-center w-full my-10">
-                <button className=" mb-7 px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
-                  Book Now
-                </button>
-              </div></Link>
-          
+              <Link to="/booking">
+                {" "}
+                <div className="flex justify-center items-center w-full my-10">
+                  <button className=" mb-7 px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
+                    Book Now
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
       </NavFootLayout>
-    </div>
+    </motion.div>
   );
 }
