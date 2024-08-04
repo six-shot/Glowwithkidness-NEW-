@@ -3,7 +3,7 @@ import { SlEarphonesAlt } from "react-icons/sl";
 import { IoIosContact } from "react-icons/io";
 export default function Contact() {
   return (
-    <div className="relative w-full sm:h-[110vh] h-[150vh] " id="home">
+    <div className="relative w-full sm:h-[110vh] h-[150vh] " >
       <img
         className="absolute  object-cover left-0 w-full h-full z-10 "
         src="/pricing.jpg"

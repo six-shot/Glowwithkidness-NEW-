@@ -87,7 +87,10 @@ export default function Navbar() {
                   {" "}
                   <li>For You</li>
                 </Link>
-                <li>Contact us</li>
+                <Link to="/contact-us">
+                  {" "}
+                  <li>Contact us</li>
+                </Link>
               </ul>
               <div className="sm:flex hidden gap-7 items-center">
                 <CiSearch className="text-[30px]" />
