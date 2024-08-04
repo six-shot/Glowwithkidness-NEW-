@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Hero from "./features/hero";
 import { IoMdArrowUp } from "react-icons/io";
 import About from "./features/about us";
-import { Gallery } from "./features/gallery";
+import Gallery from "./features/gallery"
 import Services from "./features/services";
 import Pricing from "./features/pricing";
 import Banner from "./features/banner";
@@ -42,14 +42,14 @@ export default function Home() {
         <Banner />
         <About />
       </div>
-      <Gallery />
+      {/* <Gallery /> */}
       <div className="max-w-[1440px] mx-auto">
         <Services />
       </div>
      
-      <Testimonial />
+      {/* <Testimonial />
       <Contact />
-      <Footer />
+      <Footer /> */}
       {showTopButton && (
         <div className="fixed bottom-[10%] right-[4%] bg-primary w-[45px] h-[45px] flex justify-center items-center rounded-full z-[50] text-black">
           <button className="text-[20px]" onClick={scrollToTop}>

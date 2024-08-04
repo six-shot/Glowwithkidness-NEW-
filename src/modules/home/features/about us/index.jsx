@@ -4,20 +4,20 @@ export default function About() {
   return (
     <div className="px-[5%] ">
       <div className="grid sm:grid-cols-5 grid-cols-1">
-        <div className="col-span-2  w-full  flex justify-center">
-          <div className="w-[350px] h-[550px]  rounded-[200px]">
+        <div className="sm:col-span-2 col-span-1 sm:order-first order-last  w-full  flex justify-center">
+          <div className="sm:w-[350px] h-[550px]  rounded-[200px] sm:mt-0 mt-[5%]">
             <img
               className="rounded-[200px] w-full h-full object-cover"
               src="/6b.jpg"
             />
           </div>
         </div>
-        <div className="sm:col-span-3">
-          <div className="flex gap-2 items-center">
+        <div className="sm:col-span-3 col-span-1">
+          <div className="flex sm:gap-2 sm:flex-row flex-col sm:items-center items-start">
             <h5 className="">EXPERIENCE GLOWWITHKINDNESS</h5>
-            <h5 className="bg-primary px-5 py-1">25 YEARS</h5>
+            <h5 className="bg-primary px-5 py-1 sm:my-0 my-2">25 YEARS</h5>
           </div>
-          <h3 className="text-[50px] ">DISCOVER A NEW</h3>
+          <h3 className="sm:text-[50px] text-[30px]">DISCOVER A NEW</h3>
 
           <h5 className="mt-2 sm:w-[600px]">
             We are thrilled that you have chosen us for your beauty services,

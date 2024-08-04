@@ -12,7 +12,7 @@ export default function Services() {
           <h4 className="text-[40px]">Protect your braids</h4>
         </div>
       </div>
-      <div className="grid grid-cols-3 items-center  mt-[5%]">
+      <div className="grid sm:grid-cols-3 col-span-1 items-center  mt-[5%]">
         <div className="col-span-1">
           <div className="flex gap-5 flex-col">
             <div className="flex gap-7 items-center ">

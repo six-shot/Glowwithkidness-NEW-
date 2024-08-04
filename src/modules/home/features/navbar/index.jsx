@@ -31,7 +31,13 @@ export default function Navbar() {
   return (
     <div className="fixed z-[50] w-full ">
       <div className="bg-[#F1CEDD] w-full">
-        <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[6vh] text-center text-black text-xs flex justify-between   items-center text-semibold">
+        <div className="h-[4vh] w-full sm:hidden flex  justify-center items-center">
+          <div className="flex items-center gap-1">
+            
+            <h6 className="sm:text-sm text-xs">inquiry@glowwithkindness.com</h6>
+          </div>
+        </div>
+        <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[6vh] text-center text-black text-xs sm:flex hidden justify-between   items-center text-semibold">
           <div className="flex gap-5  items-center">
             {" "}
             <div className="flex items-center gap-1">
@@ -56,11 +62,10 @@ export default function Navbar() {
             <FaInstagram />
             <FaTiktok />
             <FaTwitter />
-           
           </div>
         </div>
         <div className="bg-black">
-          <div className="max-w-[1440px] mx-auto flex justify-between items-center w-full sm:h-[13vh] h-[8vh] px-[5%] ">
+          <div className="max-w-[1440px] mx-auto flex justify-between items-center w-full sm:h-[13vh] h-[10vh] px-[5%] ">
             <div>
               <img className="sm:w-[100px] w-[70px]" src="/glowlogo.png" />
             </div>
@@ -72,7 +77,7 @@ export default function Navbar() {
                 <li>For You</li>
                 <li>Contact us</li>
               </ul>
-              <div className="flex gap-7 items-center">
+              <div className="sm:flex hidden gap-7 items-center">
                 <CiSearch className="text-[30px]" />
                 <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
                   Book Now
@@ -82,9 +87,9 @@ export default function Navbar() {
             </nav>
 
             <div className="sm:hidden flex">
-              <HiMenuAlt4
+              <HiOutlineMenuAlt3
                 onClick={toggleMenu}
-                className="text-[30px] text-black"
+                className="text-[30px] text-white"
               />
             </div>
           </div>
