@@ -22,19 +22,19 @@ export default function Footer() {
                   </div>
                 </Link>
                 <div className="flex flex-col gap-3 mt-5">
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center gap-2">
                     <CiLocationOn className="text-[20px]" />
                     <h6 className="sm:text-sm text-xs text-white/50 font-medium">
                       3702 Frankford Rd, Dallas TX, 75287
                     </h6>
                   </div>
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center gap-2">
                     <FiPhone className="text-[20px]" />
                     <h6 className="sm:text-sm text-xs text-white/50 font-medium">
                       (469) 670-0124
                     </h6>
                   </div>
-                  <div className="flex items-center gap-1">
+                  <div className="flex items-center gap-2">
                     <MdOutlineEmail className="text-[20px]" />
                     <h6 className="sm:text-sm text-xs text-white/50 font-medium">
                       inguiry@glowwithkidness.com
