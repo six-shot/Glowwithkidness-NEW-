@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div className="px-[5%] ">
       <div className="grid sm:grid-cols-5 grid-cols-1">
-        <div className="sm:col-span-2 col-span-1 sm:order-first order-last  w-full  flex justify-center">
-          <div className="sm:w-[350px] h-[550px]  rounded-[200px] sm:mt-0 mt-[5%]">
+        <div className="sm:col-span-2 col-span-1   w-full  flex justify-center">
+          <div className="sm:w-[350px] h-[550px]  rounded-[200px] sm:mt-0 mb-[5%]">
             <img
               className="rounded-[200px] w-full h-full object-cover"
               src="/6b.jpg"
