@@ -1,5 +1,6 @@
 import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -43,9 +44,11 @@ export default function About() {
                     relationship of trust and commitment…
                   </p>
                 </div>
-                <button className="px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
-                  Book Now
-                </button>
+                <Link to="/booking">
+                  <button className="px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
+                    Book Now
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

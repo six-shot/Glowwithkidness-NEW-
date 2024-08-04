@@ -2,7 +2,7 @@ import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
 
 export default function Contact() {
@@ -28,7 +28,7 @@ export default function Contact() {
                         </h6>
                       </div>
                       <div className="flex items-center gap-2">
-                        <CiLocationOn className="text-[26px]" />
+                        <MdOutlineLocationOn className="text-[26px]" />
                         <h6 className="sm:text-xl text-xs  font-medium">
                           3702 Frankford Rd, Dallas TX, 75287
                         </h6>
@@ -59,7 +59,6 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                
               </div>
               <div className="col-span-1 sm:mt-0 mt-5">
                 <h4 className="text-[30px] font-semibold mb-5">

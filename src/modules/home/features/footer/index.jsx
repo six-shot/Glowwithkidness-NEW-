@@ -3,7 +3,7 @@ import { PiCaretRightBold } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
-import { MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 export default function Footer() {
   return (
     <div className="relative w-full sm:h-[120vh] h-[150vh]" id="home">
@@ -23,7 +23,7 @@ export default function Footer() {
                 </Link>
                 <div className="flex flex-col gap-3 mt-5">
                   <div className="flex items-center gap-2">
-                    <CiLocationOn className="text-[20px]" />
+                    <MdOutlineLocationOn className="text-[22px]" />
                     <h6 className="sm:text-sm text-xs text-white/50 font-medium">
                       3702 Frankford Rd, Dallas TX, 75287
                     </h6>
@@ -108,7 +108,7 @@ export default function Footer() {
                     <div className="flex items-center gap-1 ">
                       <PiCaretRightBold className="text-primary " />
                       <h6 className="text-sm uppercase text-white/50">
-                     Hair GUide
+                        Hair GUide
                       </h6>
                     </div>
                   </Link>

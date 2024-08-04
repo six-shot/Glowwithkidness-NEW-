@@ -1,5 +1,6 @@
 import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
+import { Link } from "react-router-dom";
 
 export default function ForYou() {
   return (
@@ -44,11 +45,12 @@ export default function ForYou() {
                   us to discuss an appointment.
                 </li>
               </ol>
-              <div className="flex justify-center items-center w-full my-10">
+              <Link to="/booking">    <div className="flex justify-center items-center w-full my-10">
                 <button className=" mb-7 px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
                   Book Now
                 </button>
-              </div>
+              </div></Link>
+          
             </div>
           </div>
         </div>

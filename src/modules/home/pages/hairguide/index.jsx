@@ -1,5 +1,6 @@
 import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
+import { Link } from "react-router-dom";
 
 export default function HairGuide() {
   return (
@@ -59,11 +60,13 @@ export default function HairGuide() {
                   </div>
                 </div>
               </ol>
-              <div className="flex justify-center items-center w-full my-10">
-                <button className=" mb-7 px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
-                  Book Now
-                </button>
-              </div>
+              <Link to="/booking">
+                <div className="flex justify-center items-center w-full my-10">
+                  <button className=" mb-7 px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
+                    Book Now
+                  </button>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
