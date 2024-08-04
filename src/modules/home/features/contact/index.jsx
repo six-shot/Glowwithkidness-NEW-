@@ -10,9 +10,9 @@ export default function Contact() {
       />
       <div className="absolute top-0 left-0 z-20 w-full">
         <div className="max-w-[1440px] mx-auto pt-[5%] pb-[5%]  px-[5%]">
-          <div className="grid grid-cols-3  h-[600px]">
-            <div className="col-span-1 w-full h-full bg-primary flex flex-col justify-center items-center ">
-              <h4 className="uppercase text-[50px]">Our Timing</h4>
+          <div className="grid sm:grid-cols-3 grid-cols-1  h-[600px]">
+            <div className="col-span-1 w-full h-full sm:py-0 py-[10%] bg-primary flex flex-col justify-center items-center ">
+              <h4 className="uppercase sm:text-[50px] text-[30px]">Our Timing</h4>
               <div className="flex flex-col ">
                 <h4 className="uppercase  text-center mt-7  text-sm font-medium">
                   monday - thursday
@@ -42,7 +42,7 @@ export default function Contact() {
               <div className="flex items-center justify-center flex-col">
                 <h5 className="tracking-[3px] font-medium">ANY QUERY</h5>
 
-                <h4 className="text-[40px] font-medium">GET IN TOUCH</h4>
+                <h4 className="sm:text-[40px] text-[30px] font-medium">GET IN TOUCH</h4>
               </div>
               <div className="mt-[3%] flex gap-4 flex-col">
                 <div className="bg-[#f1cedd96] w-full h-[60px] flex items-center px-[5%]">

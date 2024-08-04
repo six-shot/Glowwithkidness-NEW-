@@ -47,8 +47,9 @@ export default function Home() {
         <Services />
       </div>
       <Testimonial />
-      {/* 
       <Contact />
+      {/* 
+  
       <Footer /> */}
       {showTopButton && (
         <div className="fixed bottom-[10%] right-[4%] bg-primary w-[45px] h-[45px] flex justify-center items-center rounded-full z-[50] text-black">
