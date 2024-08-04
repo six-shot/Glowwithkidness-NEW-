@@ -6,10 +6,13 @@ export default function ForYou() {
     <div>
       <NavFootLayout>
         <div className="w-full pt-[14vh]  sm:pt-[19vh]">
-          <img src="/about.jpg" className="w-full " />
+          <img
+            src="/about.jpg"
+            className="w-full sm:h-[400px] h-[300px] object-right object-cover"
+          />
           <div className="max-w-[1440px] mx-auto">
             <div className="px-[5%]">
-              <h4 className="text-[30px] font-semibold  text-center mt-20">
+              <h4 className="text-[30px] font-semibold  text-center mt-10 sm:mt-20">
                 Because You're Special
               </h4>
               <ol className="list-decimal sm:text-lg font-medium flex gap-5 flex-col mt-14 px-[5%]">

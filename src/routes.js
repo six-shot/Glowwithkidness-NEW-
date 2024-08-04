@@ -4,6 +4,7 @@ import Home from "./modules/home";
 import About from "./modules/home/pages/about";
 import ForYou from "./modules/home/pages/foryou";
 import Contact from "./modules/home/pages/contact";
+import HairGuide from "./modules/home/pages/hairguide";
 
 
 
@@ -16,6 +17,7 @@ function Routess() {
           <Route path="/about" exact element={<About />} />
           <Route path="/for-you" exact element={<ForYou />} />
           <Route path="/contact-us" exact element={<Contact />} />
+          <Route path="/hair-guide" exact element={<HairGuide />} />
         </Routes>
       </Router>
     </div>

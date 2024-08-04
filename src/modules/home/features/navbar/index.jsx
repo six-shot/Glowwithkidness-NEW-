@@ -81,8 +81,11 @@ export default function Navbar() {
                   {" "}
                   <li>About us</li>
                 </Link>
+                <Link to="/hair-guide">
+                  {" "}
+                  <li>Hair Guide</li>
+                </Link>
 
-                <li>Hair Guide</li>
                 <Link to="/for-you">
                   {" "}
                   <li>For You</li>

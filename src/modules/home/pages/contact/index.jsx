@@ -10,7 +10,10 @@ export default function Contact() {
     <div>
       <NavFootLayout>
         <div className="w-full pt-[14vh]  sm:pt-[19vh]">
-          <img src="/about.jpg" className="w-full" />
+          <img
+            src="/about.jpg"
+            className="w-full sm:h-[400px] h-[300px] object-right object-cover"
+          />
           <div className="max-w-[1440px] mx-auto">
             <div className="grid sm:grid-cols-3 grid-cols-1   px-[5%] my-[6%] ">
               <div className="sm:col-span-2">
