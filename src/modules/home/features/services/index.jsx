@@ -9,7 +9,9 @@ export default function Services() {
           <h6 className="text-base text-black font-medium uppercase">
             Hair guide
           </h6>
-          <h4 className="sm:text-[40px] text-[30px] sm:leding-[40px] leading-[30px]">Protect your braids</h4>
+          <h4 className="sm:text-[40px] text-[30px] sm:leding-[40px] leading-[30px]">
+            Protect your braids
+          </h4>
         </div>
       </div>
       <div className="grid sm:grid-cols-3 col-span-1 items-center  mt-[5%]">
@@ -18,10 +20,10 @@ export default function Services() {
             <div className="flex gap-7 items-center ">
               <div className="flex gap-4">
                 <div className="flex flex-col justify-end items-end">
-                  <h4 className="text-[24px]">Discover New</h4>
+                  <h4 className="text-[24px]">Avoid Long-Term Braids</h4>
                   <p className="text-sm mt-3 text-right">
-                    There are many variations of passages
-                    <br /> gaks the majority.
+                    Yes, a braided hairstyle can be worn for a long time.
+                    However, you shouldn’t leave them on for too long.
                   </p>
                 </div>
               </div>
@@ -34,10 +36,11 @@ export default function Services() {
             <div className="flex gap-7 items-center ">
               <div className="flex gap-4">
                 <div className="flex flex-col justify-end items-end">
-                  <h4 className="text-[24px]">Discover New</h4>
+                  <h4 className="text-[24px]">Regular Hair Care</h4>
                   <p className="text-sm mt-3 text-right">
-                    There are many variations of passages
-                    <br /> gaks the majority.
+                    Use oil sheen spray and mousse every Three to Five days.
+                    This gives your hair a pleasant smell and prevents your
+                    roots from drying out.
                   </p>
                 </div>
               </div>
@@ -50,10 +53,11 @@ export default function Services() {
             <div className="flex gap-7 items-center ">
               <div className="flex gap-4">
                 <div className="flex flex-col justify-end items-end">
-                  <h4 className="text-[24px]">Discover New</h4>
+                  <h4 className="text-[24px]">Prevent Hair Damage</h4>
                   <p className="text-sm mt-3 text-right">
-                    There are many variations of passages
-                    <br /> gaks the majority.
+                    Long-term braids increase breakage, knots, and tangles. Your
+                    hair will be more prone to breakage, knots, and tangles the
+                    longer you leave your braids in.
                   </p>
                 </div>
               </div>
@@ -82,10 +86,11 @@ export default function Services() {
               </div>
               <div className="flex gap-4">
                 <div className="flex flex-col ">
-                  <h4 className="text-[24px]">Discover New</h4>
+                  <h4 className="text-[24px]">Give Your Hair a Break</h4>
                   <p className="text-sm mt-3 ">
-                    There are many variations of passages
-                    <br /> gaks the majority.
+                    Avoid repeated braiding to allow hair to rest. Although
+                    braids are protective styles, they should not be made
+                    repeatedly because your hair also needs a break.
                   </p>
                 </div>
               </div>
@@ -98,10 +103,11 @@ export default function Services() {
               </div>
               <div className="flex gap-4">
                 <div className="flex flex-col ">
-                  <h4 className="text-[24px]">Discover New</h4>
+                  <h4 className="text-[24px]">Retouch and Maintain</h4>
                   <p className="text-sm mt-3 ">
-                    There are many variations of passages
-                    <br /> gaks the majority.
+                    Retouch edges after Three weeks for longer-lasting braids.
+                    You might need to retouch your edges after three weeks if
+                    you intend to wear your braids for eight weeks.
                   </p>
                 </div>
               </div>
@@ -114,10 +120,11 @@ export default function Services() {
               </div>
               <div className="flex gap-4">
                 <div className="flex flex-col ">
-                  <h4 className="text-[24px]">Discover New</h4>
+                  <h4 className="text-[24px]">Bedtime Protection</h4>
                   <p className="text-sm mt-3 ">
-                    There are many variations of passages
-                    <br /> gaks the majority.
+                    Cover braids with a silk or satin bonnet at night. When you
+                    go to bed, cover your braids with a silk or satin hair
+                    bonnet to prevent friction with your bedding.
                   </p>
                 </div>
               </div>
