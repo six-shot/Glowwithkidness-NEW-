@@ -143,7 +143,7 @@ export default function Navbar() {
                     <Link href="/">
                       {" "}
                       <div>
-                        <img className="w-[70px]" src="/logo.png" />
+                        <img className="w-[70px]" src="/glowlogo.png" />
                       </div>
                     </Link>
                     <p className="text-md cursor-pointer " onClick={toggleMenu}>
