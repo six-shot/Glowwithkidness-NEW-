@@ -8,11 +8,11 @@ export default function About() {
         <div className="w-full  pt-[19vh]">
           <img src="/about.jpg" className="w-full" />
           <div className="max-w-[1440px] mx-auto">
-            <div className="grid grid-cols-2 items-center gap-20 px-[5%] py-[5%]">
+            <div className="grid sm:grid-cols-2 grid-cols-1 items-center sm:gap-20 px-[5%] py-[5%]">
               <div className="col-span-1">
                 <img src="/about-us.jpg" className="w-full h-[600px] object-cover" />
               </div>
-              <div className="col-span-1">
+              <div className="col-span-1 sm:mt-0 mt-8">
                 <h4 className="text-[30px] font-semibold mb-5">Our Mission</h4>
                 <div className="text-lg">
                   <p>
