@@ -24,12 +24,12 @@ export default function Navbar() {
     setOpen(false);
   };
   const nav = [
-    { title: "Home" },
-    { title: "About Us" },
-    { title: "Book Appointment" },
-    { title: "Hair Guide" },
-    { title: "For You" },
-    { title: "Contact Us" },
+    { title: "Home",link:"/" },
+    { title: "About Us",link:"about" },
+    { title: "Book Appointment",link:"/" },
+    { title: "Hair Guide",link:"/hair-guide" },
+    { title: "For You",link:"/for-you" },
+    { title: "Contact Us",link:"/contact-us" },
   ];
   return (
     <div className="fixed z-[50] w-full ">
@@ -159,7 +159,7 @@ export default function Navbar() {
                   >
                     {nav.map((item) => (
                       <div>
-                        <MobileNavLink title={item.title} />
+                        <MobileNavLink title={item.title} link={item.link} />
                       </div>
                     ))}
                   </motion.div>
@@ -172,13 +172,13 @@ export default function Navbar() {
     </div>
   );
 }
-const MobileNavLink = ({ title, href, onClick }) => {
+const MobileNavLink = ({ title, link}) => {
   return (
     <motion.div
       variants={mobileLinkVars}
       className="text-2xl uppercase text-black"
     >
-      <Link href={href} onClick={onClick}>
+      <Link to={link} >
         {title}
       </Link>
     </motion.div>
