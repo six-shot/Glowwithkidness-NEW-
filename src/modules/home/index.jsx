@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import Hero from "./features/hero";
 import { IoMdArrowUp } from "react-icons/io";
 import About from "./features/about us";
-import Gallery from "./features/gallery"
+import Gallery from "./features/gallery";
 import Services from "./features/services";
 import Pricing from "./features/pricing";
 import Banner from "./features/banner";
 import Testimonial from "./features/testimonial";
 import Contact from "./features/contact";
 import Footer from "./features/footer";
-import transition from "../../utils/transition";
 
-const Home = () => {
+export default function Home() {
   const [showTopButton, setShowTopButton] = useState(false);
 
   const handleScroll = () => {
@@ -63,5 +62,4 @@ const Home = () => {
       )}
     </div>
   );
-};
-export default transition(Home);
+}

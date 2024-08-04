@@ -4,15 +4,12 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
-import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <motion.div
- 
-    >
+    <div>
       <NavFootLayout>
-        <div className="w-full pt-[14vh]  sm:pt-[19vh] ">
+        <div className="w-full pt-[14vh]  sm:pt-[19vh]">
           <img
             src="/about.jpg"
             className="w-full sm:h-[400px] h-[300px] object-right object-cover"
@@ -105,6 +102,6 @@ export default function Contact() {
           </div>
         </div>
       </NavFootLayout>
-    </motion.div>
+    </div>
   );
 }

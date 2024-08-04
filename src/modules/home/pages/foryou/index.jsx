@@ -1,16 +1,12 @@
 import React from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+
 export default function ForYou() {
   return (
-  <motion.div
-        >
+    <div>
       <NavFootLayout>
-        <div
-          
-          className="w-full pt-[14vh]  sm:pt-[19vh] "
-        >
+        <div className="w-full pt-[14vh]  sm:pt-[19vh]">
           <img
             src="/about.jpg"
             className="w-full sm:h-[400px] h-[300px] object-right object-cover"
@@ -61,6 +57,6 @@ export default function ForYou() {
           </div>
         </div>
       </NavFootLayout>
-    </motion.div>
+    </div>
   );
 }
