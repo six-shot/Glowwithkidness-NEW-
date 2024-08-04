@@ -44,7 +44,7 @@ export default function Footer() {
                 <div className="mt-5 flex flex-col gap-2  text-white">
                   <h6 className="text-[20px]">Open Hours</h6>
                   <h6 className="font-medium">
-                    Sunday to Friday 08:00 - 20:00
+                    Tuesday to Sunday 08:00am - 08:00pm
                   </h6>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function Footer() {
                   <div className="w-[50px] bg-primary h-[3px] my-2" />
                   <div className="mt-8 flex gap-4 flex-col">
                     <h5 className="text-white/50">
-           Enter you email address we promise not to spam you
+                      Enter you email address we promise not to spam you
                     </h5>
                   </div>
                   <div className="w-full h-[50px] bg-[#273036] mt-4">
@@ -77,29 +77,41 @@ export default function Footer() {
                 <h4 className="text-[22px] text-white ">IMPORTANT LINKS</h4>
                 <div className="w-[50px] bg-primary h-[3px] my-2" />
                 <div className="mt-8 flex gap-4 flex-col">
-                  <div className="flex items-center gap-1 ">
-                    <PiCaretRightBold className="text-primary " />
-                    <h6 className="text-sm uppercase text-white/50">
-                      Services
-                    </h6>
-                  </div>
-                  <div className="flex items-center gap-1 ">
-                    <PiCaretRightBold className="text-primary " />
-                    <h6 className="text-sm uppercase text-white/50">
-                      About us
-                    </h6>
-                  </div>
+                  <Link to="/for-you">
+                    <div className="flex items-center gap-1 ">
+                      <PiCaretRightBold className="text-primary " />
+                      <h6 className="text-sm uppercase text-white/50">
+                        For You
+                      </h6>
+                    </div>
+                  </Link>
+                  <Link to="/about">
+                    {" "}
+                    <div className="flex items-center gap-1 ">
+                      <PiCaretRightBold className="text-primary " />
+                      <h6 className="text-sm uppercase text-white/50">
+                        About us
+                      </h6>
+                    </div>
+                  </Link>
 
-                  <div className="flex items-center gap-1 ">
-                    <PiCaretRightBold className="text-primary " />
-                    <h6 className="text-sm uppercase text-white/50">contact</h6>
-                  </div>
-                  <div className="flex items-center gap-1 ">
-                    <PiCaretRightBold className="text-primary " />
-                    <h6 className="text-sm uppercase text-white/50">
-                      our blog
-                    </h6>
-                  </div>
+                  <Link to="/contact-us">
+                    {" "}
+                    <div className="flex items-center gap-1 ">
+                      <PiCaretRightBold className="text-primary " />
+                      <h6 className="text-sm uppercase text-white/50">
+                        contact
+                      </h6>
+                    </div>
+                  </Link>
+                  <Link to="/hair-guide">
+                    <div className="flex items-center gap-1 ">
+                      <PiCaretRightBold className="text-primary " />
+                      <h6 className="text-sm uppercase text-white/50">
+                     Hair GUide
+                      </h6>
+                    </div>
+                  </Link>
                 </div>
               </div>
               <div>
@@ -107,28 +119,16 @@ export default function Footer() {
                 <div className="w-[50px] bg-primary h-[3px] my-2 " />
                 <div className="grid grid-cols-4 flex-col h-[60px]  mt-8">
                   <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="1a.jpg "
-                      className="w-full h-full object-cover"
-                    />
+                    <img src="1a.jpg " className="w-full h-full object-cover" />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/2.jpg "
-                      className="w-full h-full object-cover"
-                    />
+                    <img src="/2.jpg " className="w-full h-full object-cover" />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/3.jpg "
-                      className="w-full h-full object-cover"
-                    />
+                    <img src="/3.jpg " className="w-full h-full object-cover" />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/4.jpg "
-                      className="w-full h-full object-cover"
-                    />
+                    <img src="/4.jpg " className="w-full h-full object-cover" />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
