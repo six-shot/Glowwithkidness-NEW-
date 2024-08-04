@@ -66,7 +66,7 @@ export default function Banner() {
             {styles.map((style, index) => (
               <div
                 key={index}
-                className="sm:w-[400px] w-[300px] bg-primary mx-5 h-[300px] flex justify-between flex-col p-[4%]"
+                className="sm:w-[400px] w-[350px] bg-primary mx-3 h-[300px] flex justify-between flex-col p-[4%]"
               >
                 <div className="col-span-1 h-full  px-[5%] py-[8 %]  ">
                   <div className="flex flex-col h-full">
