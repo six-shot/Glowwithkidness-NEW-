@@ -27,7 +27,7 @@ export default function Navbar() {
   const nav = [
     { title: "Home",link:"/" },
     { title: "About Us",link:"about" },
-    { title: "Book Appointment",link:"/" },
+    { title: "Book Appointment",link:"/booking" },
     { title: "Hair Guide",link:"/hair-guide" },
     { title: "For You",link:"/for-you" },
     { title: "Contact Us",link:"/contact-us" },
