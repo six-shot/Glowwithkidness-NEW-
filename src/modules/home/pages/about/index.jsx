@@ -6,7 +6,7 @@ export default function About() {
     <div>
       <NavFootLayout>
         <div className="w-full pt-[14vh]  sm:pt-[19vh]">
-          <img src="/about.jpg" className="w-full h-[400px] object-cover" />
+          <img src="/about.jpg" className="w-full " />
           <div className="max-w-[1440px] mx-auto">
             <div className="grid sm:grid-cols-2 grid-cols-1 items-center sm:gap-20 px-[5%] py-[5%]">
               <div className="col-span-1">
