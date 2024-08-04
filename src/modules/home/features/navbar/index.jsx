@@ -68,9 +68,9 @@ export default function Navbar() {
         </div>
         <div className="bg-black">
           <div className="max-w-[1440px] mx-auto flex justify-between items-center w-full sm:h-[13vh] h-[10vh] px-[5%] ">
-            <div>
+            <Link to="/">
               <img className="sm:w-[100px] w-[70px]" src="/glowlogo.png" />
-            </div>
+            </Link>
             <nav className="flex items-center text-white gap-7">
               <ul className="sm:flex hidden gap-7 items-center  text-sm uppercase">
                 <Link to="/">
