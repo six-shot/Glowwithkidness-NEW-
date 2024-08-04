@@ -60,10 +60,22 @@ export default function Navbar() {
             </div>
           </div>
           <div className="flex items-center gap-4 text-[20px] ">
-            <FaFacebookF />
-            <FaInstagram />
-            <FaTiktok />
-            <FaTwitter />
+            <a href="https://www.facebook.com/profile.php?id=100067823421564">
+              {" "}
+              <FaFacebookF />
+            </a>
+
+            <a href="https://www.instagram.com/glowwithkindness/">
+              {" "}
+              <FaInstagram />
+            </a>
+            <a href="https://www.tiktok.com/@glowwwithkindness">
+              <FaTiktok />
+            </a>
+            <a href="https://x.com/GlowwithK">
+              {" "}
+              <FaTwitter />
+            </a>
           </div>
         </div>
         <div className="bg-black">

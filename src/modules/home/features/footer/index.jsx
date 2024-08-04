@@ -6,7 +6,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 export default function Footer() {
   return (
-    <div className="relative w-full sm:h-[110vh] h-[150vh]" id="home">
+    <div className="relative w-full sm:h-[120vh] h-[150vh]" id="home">
       <img
         className="absolute  object-cover left-0 w-full h-full z-10"
         src="/footer.jpg"
@@ -56,8 +56,7 @@ export default function Footer() {
                   <div className="w-[50px] bg-primary h-[3px] my-2" />
                   <div className="mt-8 flex gap-4 flex-col">
                     <h5 className="text-white/50">
-                      Sed sit amet nisl in velit viverra bibendum in ac nisi.
-                      Etiam efficitur.
+           Enter you email address we promise not to spam you
                     </h5>
                   </div>
                   <div className="w-full h-[50px] bg-[#273036] mt-4">
@@ -106,52 +105,52 @@ export default function Footer() {
               <div>
                 <h4 className="text-[22px] text-white mt-24">INSTAGRAM</h4>
                 <div className="w-[50px] bg-primary h-[3px] my-2 " />
-                <div className="grid grid-cols-4 flex-col  mt-8">
+                <div className="grid grid-cols-4 flex-col h-[60px]  mt-8">
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="1a.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/2.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/3.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/4.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/5b.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/6b.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/00.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="col-span-1 w-[80%] h-[80%]">
                     <img
-                      src="/gal.jpg "
+                      src="/01.jpg "
                       className="w-full h-full object-cover"
                     />
                   </div>

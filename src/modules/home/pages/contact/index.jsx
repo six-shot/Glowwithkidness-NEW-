@@ -59,6 +59,7 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
+                
               </div>
               <div className="col-span-1 sm:mt-0 mt-5">
                 <h4 className="text-[30px] font-semibold mb-5">
