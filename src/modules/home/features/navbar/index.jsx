@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { HiMenuAlt4, HiOutlineMenuAlt2, HiOutlineMenuAlt3 } from "react-icons/hi";
 import { FaLocationDot } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { CiLocationOn,CiSearch } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
@@ -85,29 +85,39 @@ export default function Navbar() {
               <img className="sm:w-[100px] w-[70px]" src="/glowlogo.png" />
             </Link>
             <nav className="flex items-center text-white gap-7">
-              <ul className="sm:flex hidden gap-7 items-center  text-sm uppercase">
-                <Link to="/">
-                  {" "}
+              <ul className="sm:flex hidden gap-7 items-center text-sm uppercase">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) => (isActive ? "text-primary" : "")}
+                >
                   <li>Home</li>
-                </Link>
-                <Link to="/about">
-                  {" "}
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "text-primary" : "")}
+                >
                   <li>About us</li>
-                </Link>
-                <Link to="/hair-guide">
-                  {" "}
+                </NavLink>
+                <NavLink
+                  to="/hair-guide"
+                  className={({ isActive }) => (isActive ? "text-primary" : "")}
+                >
                   <li>Hair Guide</li>
-                </Link>
-
-                <Link to="/for-you">
-                  {" "}
+                </NavLink>
+                <NavLink
+                  to="/for-you"
+                  className={({ isActive }) => (isActive ? "text-primary" : "")}
+                >
                   <li>For You</li>
-                </Link>
-                <Link to="/contact-us">
-                  {" "}
+                </NavLink>
+                <NavLink
+                  to="/contact-us"
+                  className={({ isActive }) => (isActive ? "text-primary" : "")}
+                >
                   <li>Contact us</li>
-                </Link>
+                </NavLink>
               </ul>
+
               <div className="sm:flex hidden gap-7 items-center">
                 {/* <CiSearch className="text-[30px]" /> */}
                 <Link to="/booking">
