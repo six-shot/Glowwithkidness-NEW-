@@ -17,13 +17,13 @@ export default function Services() {
       <div className="grid sm:grid-cols-3 col-span-1 items-center  mt-[5%]">
         <div className="col-span-1">
           <div className="flex gap-5 flex-col">
-            <div className="flex gap-7 items-center ">
-              <div className="flex gap-4">
-                <div className="flex flex-col justify-end items-end">
+            <div className="flex sm:flex-row flex-col gap-7 items-center ">
+              <div className="flex sm:order-first order-last gap-4">
+                <div className="flex flex-col sm:justify-end sm:items-end sm:text-right text-center">
                   <h4 className="text-[24px]">Avoid Long-Term Braids</h4>
-                  <p className="text-sm mt-3 text-right">
+                  <p className="text-sm mt-3 sm:text-right">
                     Yes, a braided hairstyle can be worn for a long time.
-                    However, you shouldn’t leave them on for too long.
+                    However, you shouldn&apos;t leave them on for too long.
                   </p>
                 </div>
               </div>
@@ -33,37 +33,41 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-7 items-center ">
-              <div className="flex gap-4">
-                <div className="flex flex-col justify-end items-end">
-                  <h4 className="text-[24px]">Regular Hair Care</h4>
-                  <p className="text-sm mt-3 text-right">
-                    Use oil sheen spray and mousse every Three to Five days.
-                    This gives your hair a pleasant smell and prevents your
-                    roots from drying out.
-                  </p>
+            <div className="flex gap-5 flex-col">
+              <div className="flex sm:flex-row flex-col gap-7 items-center ">
+                <div className="flex sm:order-first order-last gap-4">
+                  <div className="flex flex-col sm:justify-end sm:items-end sm:text-right text-center">
+                    <h4 className="text-[24px]">Regular Hair Care</h4>
+                    <p className="text-sm mt-3 sm:text-right">
+                      Use oil sheen spray and mousse every Three to Five days.
+                      This gives your hair a pleasant smell and prevents your
+                      roots from drying out.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-1 rounded-full border-dashed border border-primary">
-                <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
-                  <PiHairDryer className="text-[40px] text-white" />
+                <div className="p-1 rounded-full border-dashed border border-primary">
+                  <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
+                    <PiHairDryer className="text-[40px] text-white" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex gap-7 items-center ">
-              <div className="flex gap-4">
-                <div className="flex flex-col justify-end items-end">
-                  <h4 className="text-[24px]">Prevent Hair Damage</h4>
-                  <p className="text-sm mt-3 text-right">
-                    Long-term braids increase breakage, knots, and tangles. Your
-                    hair will be more prone to breakage, knots, and tangles the
-                    longer you leave your braids in.
-                  </p>
+            <div className="flex gap-5 flex-col">
+              <div className="flex sm:flex-row flex-col gap-7 items-center ">
+                <div className="flex sm:order-first order-last gap-4">
+                  <div className="flex flex-col sm:justify-end sm:items-end sm:text-right text-center">
+                    <h4 className="text-[24px]">Prevent Hair Damage</h4>
+                    <p className="text-sm mt-3 sm:text-right">
+                      Long-term braids increase breakage, knots, and tangles.
+                      Your hair will be more prone to breakage, knots, and
+                      tangles the longer you leave your braids in.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="p-1 rounded-full border-dashed border border-primary">
-                <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
-                  <PiHairDryer className="text-[40px] text-white" />
+                <div className="p-1 rounded-full border-dashed border border-primary">
+                  <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
+                    <PiHairDryer className="text-[40px] text-white" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -78,14 +82,14 @@ export default function Services() {
 
         <div className="col-span-1">
           <div className="flex gap-5 flex-col">
-            <div className="flex gap-7 items-center ">
+            <div className="flex sm:flex-row flex-col gap-7 items-center ">
               <div className="p-1 rounded-full border-dashed border border-primary">
                 <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
                   <PiHairDryer className="text-[40px] text-white" />
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="flex flex-col ">
+                <div className="flex flex-col sm:text-left text-center ">
                   <h4 className="text-[24px]">Give Your Hair a Break</h4>
                   <p className="text-sm mt-3 ">
                     Avoid repeated braiding to allow hair to rest. Although
@@ -95,14 +99,14 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-7 items-center ">
+            <div className="flex sm:flex-row flex-col gap-7 items-center ">
               <div className="p-1 rounded-full border-dashed border border-primary">
                 <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
                   <PiHairDryer className="text-[40px] text-white" />
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="flex flex-col ">
+                <div className="flex flex-col sm:text-left text-center ">
                   <h4 className="text-[24px]">Retouch and Maintain</h4>
                   <p className="text-sm mt-3 ">
                     Retouch edges after Three weeks for longer-lasting braids.
@@ -112,14 +116,14 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-7 items-center ">
+            <div className="flex sm:flex-row flex-col gap-7 items-center ">
               <div className="p-1 rounded-full border-dashed border border-primary">
                 <div className="w-[100px] h-[100px] bg-primary rounded-full flex justify-center items-center">
                   <PiHairDryer className="text-[40px] text-white" />
                 </div>
               </div>
               <div className="flex gap-4">
-                <div className="flex flex-col ">
+                <div className="flex flex-col sm:text-left text-center ">
                   <h4 className="text-[24px]">Bedtime Protection</h4>
                   <p className="text-sm mt-3 ">
                     Cover braids with a silk or satin bonnet at night. When you
