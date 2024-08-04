@@ -73,14 +73,20 @@ export default function Navbar() {
             </div>
             <nav className="flex items-center text-white gap-7">
               <ul className="sm:flex hidden gap-7 items-center  text-sm uppercase">
-                <li>Home</li>
+                <Link to="/">
+                  {" "}
+                  <li>Home</li>
+                </Link>
                 <Link to="/about">
                   {" "}
                   <li>About us</li>
                 </Link>
 
                 <li>Hair Guide</li>
-                <li>For You</li>
+                <Link to="/for-you">
+                  {" "}
+                  <li>For You</li>
+                </Link>
                 <li>Contact us</li>
               </ul>
               <div className="sm:flex hidden gap-7 items-center">
