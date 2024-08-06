@@ -37,7 +37,7 @@ export default function Footer() {
                   <div className="flex items-center gap-2">
                     <MdOutlineEmail className="text-[20px]" />
                     <h6 className="sm:text-sm text-xs text-white/50 font-medium">
-                      inguiry@glowwithkidness.com
+                      inquiry@glowwithkidness.com
                     </h6>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Footer() {
                 </div>
               </div>
               <div>
-                <h4 className="text-[22px] text-white mt-24">INSTAGRAM</h4>
+                <h4 className="text-[22px] text-white mt-24">Gallery</h4>
                 <div className="w-[50px] bg-primary h-[3px] my-2 " />
                 <div className="grid grid-cols-4 flex-col h-[60px]  mt-8">
                   <div className="col-span-1 w-[80%] h-[80%]">

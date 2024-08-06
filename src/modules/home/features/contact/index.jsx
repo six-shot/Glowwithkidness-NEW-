@@ -60,7 +60,7 @@ export default function Contact() {
                   <input
                     type="text"
                     className="h-full w-full outline-none bg-transparent placeholder:text-gray-400 px-3 placeholder:text-sm"
-                    placeholder="YOUR NAME *"
+                    placeholder="YOUR EMAIL *"
                   />
                 </div>
                 <div className="bg-[#f1cedd96] w-full h-[150px]  flex items-center px-[5%] py-[2%]">
@@ -69,7 +69,7 @@ export default function Contact() {
                     type="text"
                  
                     className="h-full w-full outline-none bg-transparent placeholder:text-gray-400 px-3 placeholder:text-sm"
-                    placeholder="YOUR NAME *"
+                    placeholder="YOUR MESSAGE *"
                   />
                 </div>
                 <button className="w-full h-[60px] bg-primary font-medium">

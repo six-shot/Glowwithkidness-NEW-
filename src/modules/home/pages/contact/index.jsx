@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
+import MapComponent from "../../features/map";
 
 export default function Contact() {
   return (
@@ -18,8 +19,8 @@ export default function Contact() {
             <div className="grid sm:grid-cols-3 grid-cols-1   px-[5%] my-[6%] ">
               <div className="sm:col-span-2">
                 <h4 className="text-[30px] font-semibold mb-5">Contact Us</h4>
-                <div className="grid sm:grid-cols-2 grid-cols-1">
-                  <div className="col-span-1">
+                <div className="grid sm:grid-cols-2 grid-cols-1 w-full">
+                  <div className="col-span-1 w-full">
                     <div className="flex flex-col sm:gap-6 gap-4 sm:mt-5">
                       <div className="flex items-center gap-2">
                         <FiPhone className="text-[24px]" />
@@ -41,6 +42,7 @@ export default function Contact() {
                         </h6>
                       </div>
                     </div>
+                   
                   </div>
                   <div className="col-span-1">
                     <div className="flex flex-col gap-6 mt-5">
@@ -99,6 +101,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+            <MapComponent />
           </div>
         </div>
       </NavFootLayout>

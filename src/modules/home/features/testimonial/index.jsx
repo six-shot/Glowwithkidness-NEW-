@@ -49,12 +49,12 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     text: "For a couple of times, I've been going to Kindness for my braids. I will continue to visit her no matter where I travel in the city. She does a fantastic job!",
-    name: "Rosemary Ajayi",
+    name: "Gloria Ernest",
     img: "/user1.jpg",
   },
   {
     text: "For many years, I have struggled with hair stylists who lack enthusiasm for their craft. This lady is fantastic! I have become part of her craft!",
-    name: "Jane Doe",
+    name: "Priscy Albert",
     img: "/user2.jpg",
   },
   {
@@ -70,7 +70,7 @@ const testimonials = [
 ];
 
 const ONE_SECOND = 1000;
-const AUTO_DELAY = ONE_SECOND * 3;
+const AUTO_DELAY = ONE_SECOND * 5;
 
 const TestimonialSlider = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);

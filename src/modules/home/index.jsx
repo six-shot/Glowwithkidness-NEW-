@@ -10,6 +10,7 @@ import Testimonial from "./features/testimonial";
 import Contact from "./features/contact";
 import Footer from "./features/footer";
 
+
 export default function Home() {
   const [showTopButton, setShowTopButton] = useState(false);
 
@@ -48,6 +49,7 @@ export default function Home() {
       </div>
       <Testimonial />
       <Contact />
+  
       <Footer />
 
       {showTopButton && (
