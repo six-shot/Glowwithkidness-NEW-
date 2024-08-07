@@ -58,6 +58,7 @@ export default function Contact() {
                           Mon: CLOSED
                         </h6>
                       </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -103,7 +104,7 @@ export default function Contact() {
             </div>
             <MapComponent />
           </div>
-        </div>
+       
       </NavFootLayout>
     </div>
   );

@@ -124,7 +124,7 @@ export default function Testimonial() {
           <div className="flex items-center justify-center flex-col sm:mb-[5%] mb-[14%]">
             <h5 className="tracking-[3px] font-medium">OUR CLIENTS</h5>
             <h4 className="sm:text-[40px] text-[30px] text-center font-medium">
-              Glowithkindness Customers
+           Some reviews from our clients
             </h4>
           </div>
           <TestimonialSlider />

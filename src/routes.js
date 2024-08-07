@@ -6,6 +6,7 @@ import ForYou from "./modules/home/pages/foryou";
 import Contact from "./modules/home/pages/contact";
 import HairGuide from "./modules/home/pages/hairguide";
 import Booking from "./modules/home/pages/booking";
+import TermsAndConditions from "./modules/home/pages/termsandconditions";
 
 function Routess() {
   return (
@@ -18,6 +19,7 @@ function Routess() {
           <Route path="/contact-us" exact element={<Contact />} />
           <Route path="/hair-guide" exact element={<HairGuide />} />
           <Route path="/booking" exact element={<Booking />} />
+          <Route path='/terms-and-conditions' element={<TermsAndConditions/>} />
         </Routes>
       </Router>
     </div>

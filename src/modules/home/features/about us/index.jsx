@@ -1,5 +1,6 @@
 import React from "react";
 import { PiHairDryer } from "react-icons/pi";
+import { Link } from "react-router-dom";
 export default function About() {
   return (
     <div className="px-[5%] py-[4%] ">
@@ -34,7 +35,12 @@ export default function About() {
           </p>
           <p className="mt-4 sm:w-[600px]">
             Kindly read our{" "}
-            <span className="text-primary underline">terms and conditions</span>{" "}
+            <Link to="/terms-and-conditions">
+              {" "}
+              <span className="text-black font-bold underline">
+                terms and conditions
+              </span>
+            </Link>
             to better understand how we operate. We hope you&apos;ll visit us
             soon and experience the difference our salon can make.
           </p>
