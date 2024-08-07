@@ -12,29 +12,29 @@ import Footer from "./features/footer";
 
 
 export default function Home() {
-  const [showTopButton, setShowTopButton] = useState(false);
+  // const [showTopButton, setShowTopButton] = useState(false);
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY || window.pageYOffset;
+  // const handleScroll = () => {
+  //   const scrollY = window.scrollY || window.pageYOffset;
 
-    // Show the button when the user scrolls down 200px
-    if (scrollY > 200) {
-      setShowTopButton(true);
-    } else {
-      setShowTopButton(false);
-    }
-  };
+  //   // Show the button when the user scrolls down 200px
+  //   if (scrollY > 200) {
+  //     setShowTopButton(true);
+  //   } else {
+  //     setShowTopButton(false);
+  //   }
+  // };
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // const scrollToTop = () => {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <div className="relative">
@@ -52,7 +52,7 @@ export default function Home() {
   
       <Footer />
 
-      {showTopButton && (
+      {/* {showTopButton && (
         <div
           onClick={scrollToTop}
           className="fixed cursor-pointer bottom-[10%] border-[4px] border-white right-[4%] bg-primary w-[50px] h-[50px] flex justify-center items-center rounded-full z-[50] text-black"
@@ -61,7 +61,7 @@ export default function Home() {
             <IoMdArrowUp />
           </button>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
