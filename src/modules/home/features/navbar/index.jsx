@@ -221,7 +221,7 @@ export default function Navbar() {
                       </div>
                     ))}
                   </motion.div>
-                  <div className="flex justify-center items-center mb-10">
+                  <div className="flex justify-center items-center mb-[30%]">
                     {" "}
                     <div className="flex items-center gap-10 text-[22px] ">
                       <a href="https://www.facebook.com/profile.php?id=100067823421564">
