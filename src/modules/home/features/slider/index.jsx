@@ -55,7 +55,8 @@ export const Slider = () => {
   const [imgIndex, setImgIndex] = useState(1);
   const dragX = useMotionValue(0);
 
-  const isMobile = window.innerWidth <= 768; 
+  const isMobile = window.innerWidth <= 640;
+  const isTablet = window.innerWidth > 640 && window.innerWidth <= 768;
 
   useEffect(() => {
     const intervalRef = setInterval(() => {
@@ -80,7 +81,7 @@ export const Slider = () => {
   return (
     <div
       className={`relative overflow-hidden sm:mt-[15vh] mt-[14vh] slider-container ${
-        isMobile ? "mobile" : "desktop"
+        isMobile ? "mobile" : isTablet ? "tablet" : "desktop"
       }`}
     >
       <motion.div
@@ -88,25 +89,29 @@ export const Slider = () => {
         dragConstraints={{ left: 0, right: 0 }}
         style={{ x: dragX }}
         animate={{
-          translateX: `-${(imgIndex - 1) * (isMobile ? 100 : 100 / 3)}%`,
+          translateX: `-${
+            (imgIndex - 1) * (isMobile ? 100 : isTablet ? 100 / 2 : 100 / 3)
+          }%`,
         }}
         transition={SPRING_OPTIONS}
         onDragEnd={onDragEnd}
         className="flex cursor-grab items-center active:cursor-grabbing"
       >
-        <Images imgIndex={imgIndex} />
+        <Images isMobile={isMobile} isTablet={isTablet} />
       </motion.div>
     </div>
   );
 };
 
-const Images = ({ imgIndex }) => {
+const Images = ({ isMobile, isTablet }) => {
   return (
     <>
       {imgs.map((img, idx) => (
         <div
           key={idx}
-          className="flex flex-col items-center w-full sm:w-1/3 h-[650px] shrink-0"
+          className={`flex flex-col items-center ${
+            isMobile ? "w-full" : isTablet ? "w-1/2" : "w-1/3"
+          } h-[650px] shrink-0`}
         >
           <motion.div
             style={{
@@ -121,4 +126,3 @@ const Images = ({ imgIndex }) => {
     </>
   );
 };
-
