@@ -121,7 +121,7 @@ export default function Testimonial() {
     <div className="relative w-full h-[100vh] bg-primary/40  flex items-center">
       <div className="absolute top-0 left-0 z-20 w-full">
         <div className="max-w-[1440px] mx-auto pt-[5%] px-[5%]">
-          <div className="flex items-center justify-center flex-col sm:mb-[5%] mb-[14%]">
+          <div className="flex items-center justify-center flex-col lg:mb-[5%] mb-[14%]">
             <h5 className="tracking-[3px] font-medium">OUR CLIENTS</h5>
             <h4 className="sm:text-[40px] text-[30px] text-center font-medium">
            Some reviews from our clients

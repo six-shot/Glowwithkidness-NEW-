@@ -14,7 +14,7 @@ export default function Services() {
           </h4>
         </div>
       </div>
-      <div className="grid sm:grid-cols-3 col-span-1 items-center  mt-[5%]">
+      <div className="grid lg:grid-cols-3 col-span-1 items-center  mt-[5%]">
         <div className="col-span-1">
           <div className="flex gap-5 flex-col">
             <div className="flex sm:flex-row flex-col gap-7 items-center ">

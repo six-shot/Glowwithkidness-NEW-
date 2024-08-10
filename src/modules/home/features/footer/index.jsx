@@ -6,7 +6,7 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 export default function Footer() {
   return (
-    <div className="relative w-full sm:h-[120vh] h-[150vh]" id="home">
+    <div className="relative w-full lg:h-[100vh] h-[150vh]" id="home">
       <img
         className="absolute  object-cover left-0 w-full h-full z-10"
         src="/footer.jpg"

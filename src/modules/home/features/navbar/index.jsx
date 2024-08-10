@@ -35,12 +35,12 @@ export default function Navbar() {
   return (
     <div className="fixed z-[50] w-full ">
       <div className="bg-[#F1CEDD] w-full">
-        <div className="h-[4vh] w-full sm:hidden flex  justify-center items-center">
+        <div className="h-[4vh] w-full lg:hidden flex  justify-center items-center">
           <div className="flex items-center gap-1">
             <h6 className="sm:text-sm text-xs">inquiry@glowwithkindness.com</h6>
           </div>
         </div>
-        <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[6vh] text-center text-black text-xs sm:flex hidden justify-between   items-center text-semibold">
+        <div className=" px-[5%] w-full   max-w-[1440px] mx-auto h-[6vh] text-center text-black text-xs lg:flex hidden justify-between   items-center text-semibold">
           <div className="flex gap-5  items-center">
             {" "}
             <div className="flex items-center gap-1">
@@ -84,8 +84,8 @@ export default function Navbar() {
             <Link to="/">
               <img className="sm:w-[100px] w-[70px]" src="/glowlogo.png" />
             </Link>
-            <nav className="flex items-center text-white gap-7">
-              <ul className="sm:flex hidden gap-7 items-center text-sm uppercase">
+            <nav className="flex items-center text-white lg:gap-7">
+              <ul className="lg:flex hidden lg:gap-7 items-center text-sm uppercase">
                 <NavLink
                   to="/"
                   className={({ isActive }) => (isActive ? "text-primary" : "")}
@@ -118,7 +118,7 @@ export default function Navbar() {
                 </NavLink>
               </ul>
 
-              <div className="sm:flex hidden gap-7 items-center">
+              <div className="lg:flex hidden gap-7 items-center">
                 {/* <CiSearch className="text-[30px]" /> */}
                 <Link to="/booking">
                   <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
@@ -133,7 +133,7 @@ export default function Navbar() {
               </div>
             </nav>
 
-            <div className="sm:hidden flex">
+            <div className="lg:hidden flex">
               <HiOutlineMenuAlt3
                 onClick={toggleMenu}
                 className="text-[30px] text-white"

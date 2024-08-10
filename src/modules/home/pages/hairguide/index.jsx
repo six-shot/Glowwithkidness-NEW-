@@ -9,21 +9,21 @@ export default function HairGuide() {
         <div className="w-full pt-[14vh]  sm:pt-[19vh]">
           <img
             src="/about.jpg"
-            className="w-full sm:h-[400px] h-[300px] object-right object-cover"
+            className="w-full lg:h-[400px] h-[300px] object-right object-cover"
           />
           <div className="max-w-[1440px] mx-auto">
             <div className="px-[5%]">
               <h4 className="text-[30px] font-semibold  text-center mt-10 sm:mt-20 ">
                 Hair Guide: (How to Protect Your Braids)
               </h4>
-              <ol className="list-decimal sm:text-lg font-medium grid sm:grid-cols-2 grid-cols-1 gap-20 sm:mt-14 mt-10 px-[5%]">
+              <ol className="list-decimal lg:text-lg font-medium grid sm:grid-cols-2 grid-cols-1 gap-20 sm:mt-14 mt-10 px-[5%]">
                 <div className="col-span-1 ">
                   <div className="flex flex-col gap-8">
                     <li>
                       GlowwithKindness advises against keeping braids on for
                       more than Four (4) to Eight (8) weeks. Yes, a braided
                       hairstyle can be worn for a very long time. However, you
-                      shouldn’t leave them on for too long. Every Three (3) to
+                      shouldn&apos;t leave them on for too long. Every Three (3) to
                       Five (5) days, use oil sheen spray and mousse. This gives
                       your hair a pleasant smell and prevents your roots from
                       drying out.

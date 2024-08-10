@@ -55,7 +55,7 @@ export const Slider = () => {
   const [imgIndex, setImgIndex] = useState(1);
   const dragX = useMotionValue(0);
 
-  const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
+  const isMobile = window.innerWidth <= 768; 
 
   useEffect(() => {
     const intervalRef = setInterval(() => {
