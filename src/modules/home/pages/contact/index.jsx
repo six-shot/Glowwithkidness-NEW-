@@ -42,7 +42,6 @@ export default function Contact() {
                         </h6>
                       </div>
                     </div>
-                   
                   </div>
                   <div className="col-span-1">
                     <div className="flex flex-col gap-6 mt-5">
@@ -58,53 +57,52 @@ export default function Contact() {
                           Mon: CLOSED
                         </h6>
                       </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="col-span-1 sm:mt-0 mt-5">
-                <h4 className="text-[30px] font-semibold mb-5">
-                  Send Us A Message
-                </h4>
-                <div className="flex flex-col gap-4">
-                  <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
-                    <input
-                      type="text"
-                      className="w-full h-full bg-transparent outline-none px-5"
-                      placeholder="Full Name"
-                    />
-                  </div>
-                  <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
-                    <input
-                      type="text"
-                      className="w-full h-full bg-transparent outline-none px-5"
-                      placeholder="Email Address"
-                    />
-                  </div>
-                  <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
-                    <input
-                      type="text"
-                      className="w-full h-full bg-transparent outline-none px-5"
-                      placeholder="Phone Number"
-                    />
-                  </div>
-                  <div className="w-full h-[200px] bg-[#F7F7F7] rounded-[10px]">
-                    <textarea
-                      type="text"
-                      className="w-full h-full bg-transparent outline-none p-5"
-                      placeholder="Your Message"
-                    />
-                  </div>
-                  <button className="w-full bg-primary h-[50px] rounded-[50px] font-medium text-lg">
-                    Submit{" "}
-                  </button>
+            </div>
+            <div className="col-span-1 sm:mt-0 mt-5 px-[5%] ">
+              <h4 className="text-[30px] font-semibold mb-5">
+                Send Us A Message
+              </h4>
+              <div className="flex flex-col gap-4">
+                <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
+                  <input
+                    type="text"
+                    className="w-full h-full bg-transparent outline-none px-5"
+                    placeholder="Full Name"
+                  />
                 </div>
+                <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
+                  <input
+                    type="text"
+                    className="w-full h-full bg-transparent outline-none px-5"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
+                  <input
+                    type="text"
+                    className="w-full h-full bg-transparent outline-none px-5"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div className="w-full h-[200px] bg-[#F7F7F7] rounded-[10px]">
+                  <textarea
+                    type="text"
+                    className="w-full h-full bg-transparent outline-none p-5"
+                    placeholder="Your Message"
+                  />
+                </div>
+                <button className="w-full bg-primary h-[50px] rounded-[50px] font-medium text-lg">
+                  Submit{" "}
+                </button>
               </div>
             </div>
-            <MapComponent />
           </div>
-       
+          <MapComponent />
+        </div>
       </NavFootLayout>
     </div>
   );

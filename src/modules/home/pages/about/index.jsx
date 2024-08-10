@@ -12,7 +12,7 @@ export default function About() {
             className="w-full sm:h-[400px] h-[300px] object-right object-cover"
           />
           <div className="max-w-[1440px] mx-auto">
-            <div className="grid sm:grid-cols-2 grid-cols-1 items-center sm:gap-20 px-[5%] py-[5%]">
+            <div className="grid lg:grid-cols-2 grid-cols-1 items-center sm:gap-20 px-[5%] py-[5%]">
               <div className="col-span-1">
                 <img
                   src="/about-us.jpg"
