@@ -16,7 +16,7 @@ export default function About() {
         <div className="lg:col-span-3 col-span-1">
           <div className="flex sm:gap-2 sm:flex-row flex-col sm:items-center items-start">
             <h5 className="">EXPERIENCE GLOWWITHKINDNESS</h5>
-            <h5 className="bg-primary px-5 py-1 sm:my-0 my-2">25 YEARS</h5>
+            {/* <h5 className="bg-primary px-5 py-1 sm:my-0 my-2">25 YEARS</h5> */}
           </div>
           <h3 className="lg:text-[50px] text-[30px]">DISCOVER A NEW</h3>
 
@@ -37,10 +37,10 @@ export default function About() {
             Kindly read our{" "}
             <Link to="/terms-and-conditions">
               {" "}
-              <span className="text-black font-bold underline">
+              <span className="text-[#f198bf] font-bold underline">
                 terms and conditions
               </span>
-            </Link>
+            </Link>{" "}
             to better understand how we operate. We hope you&apos;ll visit us
             soon and experience the difference our salon can make.
           </p>
