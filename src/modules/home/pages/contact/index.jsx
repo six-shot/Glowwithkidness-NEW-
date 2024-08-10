@@ -1,12 +1,50 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import NavFootLayout from "../../layout/NavFootLayout";
 import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
 import MapComponent from "../../features/map";
-
+import emailjs from "@emailjs/browser";
+import Email from "../../components/modals/SucessfulEmail";
 export default function Contact() {
+    let [isOpen, setIsOpen] = useState(false);
+    let [loading, setLoading] = useState(false);
+    function open() {
+      setIsOpen(true);
+    }
+
+    function close() {
+      setIsOpen(false);
+    }
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      setLoading(true); // Set loading to true
+
+      emailjs
+        .sendForm(
+          "service_9b9x8rn",
+          "template_82v0f0x",
+          form.current,
+          "028oe5BOQn4RDC_pr"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            console.log("message sent");
+            open();
+            form.current.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        )
+        .finally(() => {
+          setLoading(false);
+        });
+    };
   return (
     <div>
       <NavFootLayout>
@@ -66,10 +104,15 @@ export default function Contact() {
               <h4 className="text-[30px] font-semibold mb-5">
                 Send Us A Message
               </h4>
-              <div className="flex flex-col gap-4">
+              <form
+                ref={form}
+                onSubmit={sendEmail}
+                className="flex flex-col gap-4 mb-5"
+              >
                 <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
                   <input
                     type="text"
+                    name="user_name"
                     className="w-full h-full bg-transparent outline-none px-5"
                     placeholder="Full Name"
                   />
@@ -77,29 +120,33 @@ export default function Contact() {
                 <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
                   <input
                     type="text"
+                    name="user_email"
                     className="w-full h-full bg-transparent outline-none px-5"
                     placeholder="Email Address"
                   />
                 </div>
-                <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
-                  <input
-                    type="text"
-                    className="w-full h-full bg-transparent outline-none px-5"
-                    placeholder="Phone Number"
-                  />
-                </div>
+
                 <div className="w-full h-[200px] bg-[#F7F7F7] rounded-[10px]">
                   <textarea
+                    name="message"
                     type="text"
                     className="w-full h-full bg-transparent outline-none p-5"
                     placeholder="Your Message"
                   />
                 </div>
-                <button className="w-full bg-primary h-[50px] rounded-[50px] font-medium text-lg">
-                  Submit{" "}
+                <button
+                  type="submit"
+                  className={`w-full h-[50px] rounded-[50px] bg-primary font-medium ${
+                    loading ? "opacity-50 cursor-not-allowed" : ""
+                  }`} // Disable the button while loading
+                  disabled={loading} // Disable button if loading
+                >
+                  {loading ? "Sending..." : "SEND MESSAGE"}{" "}
+                  {/* Show loading text */}
                 </button>
-              </div>
+              </form>
             </div>
+            <Email isOpen={isOpen} close={close} />
           </div>
           <MapComponent />
         </div>
