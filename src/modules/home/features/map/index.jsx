@@ -31,7 +31,16 @@ const markers = [
 
 export default function MapComponent() {
   return (
-    <MapContainer center={[32.997, -96.846]} zoom={13} scrollWheelZoom={false}>
+    <MapContainer
+      center={[32.997, -96.846]}
+      zoom={13}
+      scrollWheelZoom={false}
+      dragging={false}
+      touchZoom={false}
+      doubleClickZoom={false}
+      boxZoom={false}
+      keyboard={false}
+    >
       {/* OPEN STREEN MAPS TILES */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
