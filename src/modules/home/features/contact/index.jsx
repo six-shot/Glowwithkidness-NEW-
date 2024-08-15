@@ -5,6 +5,10 @@ import { IoIosContact } from "react-icons/io";
 import Email from "../../components/modals/SucessfulEmail";
 
 export default function Contact() {
+   const service_id = process.env.REACT_APP_SERVICE_ID;
+   const template_id = process.env.REACT_APP_TEMPLATE_ID;
+   const public_id = process.env.REACT_APP_PUBLIC_ID;
+  
   let [isOpen, setIsOpen] = useState(false);
   let [loading, setLoading] = useState(false); 
   function open() {
@@ -18,15 +22,10 @@ export default function Contact() {
 
  const sendEmail = (e) => {
    e.preventDefault();
-   setLoading(true); // Set loading to true
+   setLoading(true); 
 
    emailjs
-     .sendForm(
-       "service_583p7yr",
-       "template_ca90j5l",
-       form.current,
-       "XT60bMDirUbs-adaU"
-     )
+     .sendForm(service_id, template_id, form.current, public_id)
      .then(
        (result) => {
          console.log(result.text);
