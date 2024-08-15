@@ -27,7 +27,3 @@ This project is a React-based web application designed for the Glow with Kindnes
    ```bash
    npm install
 
- 4. **Install Dependencies:**
-
-   ```bash
-   npm install
