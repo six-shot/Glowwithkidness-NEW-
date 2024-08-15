@@ -47,6 +47,11 @@ export default function About() {
           <p className="mt-4 lg:w-[600px]">
             Thank you for choosing us, and we look forward to serving you!
           </p>
+          <Link to="/booking">
+            <button className="px-8 py-3 bg-primary mt-5 font-medium rounded-[50px]">
+              Book Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

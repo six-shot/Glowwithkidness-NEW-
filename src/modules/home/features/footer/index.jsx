@@ -117,43 +117,55 @@ export default function Footer() {
               <div>
                 <h4 className="text-[22px] text-white mt-24">Gallery</h4>
                 <div className="w-[50px] bg-primary h-[3px] my-2 " />
-                <div className="grid grid-cols-4 flex-col h-[60px]  mt-8">
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img src="1a.jpg " className="w-full h-full object-cover" />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img src="/2.jpg " className="w-full h-full object-cover" />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img src="/3.jpg " className="w-full h-full object-cover" />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img src="/4.jpg " className="w-full h-full object-cover" />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/5b.jpg "
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/6b.jpg "
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/00.jpg "
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="col-span-1 w-[80%] h-[80%]">
-                    <img
-                      src="/01.jpg "
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+                <div className="grid grid-cols-4 flex-col h-[60px] mt-8">
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="1a.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/2.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/3.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/4.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/5b.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/6b.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/00.jpg" className="w-full h-full object-cover" />
+                  </Link>
+                  <Link
+                    href="https://www.instagram.com/glowwithkindness/"
+                    className="col-span-1 w-[80%] h-[80%]"
+                  >
+                    <img src="/01.jpg" className="w-full h-full object-cover" />
+                  </Link>
                 </div>
               </div>
             </div>

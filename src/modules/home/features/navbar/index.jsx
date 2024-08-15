@@ -26,7 +26,7 @@ export default function Navbar() {
   };
   const nav = [
     { title: "Home",link:"/" },
-    { title: "About Us",link:"about" },
+    { title: "About Us",link:"/about" },
     { title: "Book Appointment",link:"/booking" },
     { title: "Hair Guide",link:"/hair-guide" },
     { title: "For You",link:"/for-you" },
@@ -121,7 +121,7 @@ export default function Navbar() {
               <div className="lg:flex hidden gap-7 items-center">
                 {/* <CiSearch className="text-[30px]" /> */}
                 <Link to="/booking">
-                  <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD]">
+                  <button className=" sm:flex hidden py-2.5 px-6  text-black bg-[#F1CEDD] rounded-[50px]">
                     Book Now
                   </button>
                 </Link>
@@ -257,9 +257,7 @@ const MobileNavLink = ({ title, link}) => {
       variants={mobileLinkVars}
       className="text-2xl uppercase text-black"
     >
-      <Link to={link} >
-        {title}
-      </Link>
+      <NavLink to={link}>{title}</NavLink>
     </motion.div>
   );
 };

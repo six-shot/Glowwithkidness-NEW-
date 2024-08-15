@@ -4,7 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
-import MapComponent from "../../features/map";
+import MapComponent from "../../features/map/index"
 import emailjs from "@emailjs/browser";
 import Email from "../../components/modals/SucessfulEmail";
 export default function Contact() {
@@ -148,7 +148,7 @@ export default function Contact() {
             </div>
             <Email isOpen={isOpen} close={close} />
           </div>
-          <MapComponent />
+      <MapComponent/>
         </div>
       </NavFootLayout>
     </div>
