@@ -4,9 +4,9 @@ import { CiLocationOn } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 import { FaClock } from "react-icons/fa";
-import MapComponent from "../../features/map/index"
 import emailjs from "@emailjs/browser";
 import Email from "../../components/modals/SucessfulEmail";
+import MapComponent from "../../features/map/index"
 export default function Contact() {
 
   const service_id = process.env.REACT_APP_SERVICE_ID;
@@ -101,54 +101,60 @@ export default function Contact() {
               </div>
             </div>
             <div className="col-span-1 sm:mt-0 mt-5 px-[5%] ">
-              <h4 className="text-[30px] font-semibold mb-5">
-                Send Us A Message
-              </h4>
-              <form
-                ref={form}
-                onSubmit={sendEmail}
-                className="flex flex-col gap-4 mb-5"
-              >
-                <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
-                  <input
-                    type="text"
-                    name="user_name"
-                    className="w-full h-full bg-transparent outline-none px-5"
-                    placeholder="Full Name"
-                  />
+              <div className="grid sm:grid-cols-2 grid-cols-1">
+                <div className="col-span-1">
+                  <MapComponent />
                 </div>
-                <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
-                  <input
-                    type="text"
-                    name="user_email"
-                    className="w-full h-full bg-transparent outline-none px-5"
-                    placeholder="Email Address"
-                  />
-                </div>
+                <div>
+                  <h4 className="text-[30px] font-semibold mb-5">
+                    Send Us A Message
+                  </h4>
+                  <form
+                    ref={form}
+                    onSubmit={sendEmail}
+                    className="flex flex-col gap-4 mb-5"
+                  >
+                    <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
+                      <input
+                        type="text"
+                        name="user_name"
+                        className="w-full h-full bg-transparent outline-none px-5"
+                        placeholder="Full Name"
+                      />
+                    </div>
+                    <div className="w-full h-[50px] bg-[#F7F7F7] rounded-[10px]">
+                      <input
+                        type="text"
+                        name="user_email"
+                        className="w-full h-full bg-transparent outline-none px-5"
+                        placeholder="Email Address"
+                      />
+                    </div>
 
-                <div className="w-full h-[200px] bg-[#F7F7F7] rounded-[10px]">
-                  <textarea
-                    name="message"
-                    type="text"
-                    className="w-full h-full bg-transparent outline-none p-5"
-                    placeholder="Your Message"
-                  />
+                    <div className="w-full h-[200px] bg-[#F7F7F7] rounded-[10px]">
+                      <textarea
+                        name="message"
+                        type="text"
+                        className="w-full h-full bg-transparent outline-none p-5"
+                        placeholder="Your Message"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className={`w-full h-[50px] rounded-[50px] bg-primary font-medium ${
+                        loading ? "opacity-50 cursor-not-allowed" : ""
+                      }`} // Disable the button while loading
+                      disabled={loading} // Disable button if loading
+                    >
+                      {loading ? "Sending..." : "SEND MESSAGE"}{" "}
+                      {/* Show loading text */}
+                    </button>
+                  </form>
                 </div>
-                <button
-                  type="submit"
-                  className={`w-full h-[50px] rounded-[50px] bg-primary font-medium ${
-                    loading ? "opacity-50 cursor-not-allowed" : ""
-                  }`} // Disable the button while loading
-                  disabled={loading} // Disable button if loading
-                >
-                  {loading ? "Sending..." : "SEND MESSAGE"}{" "}
-                  {/* Show loading text */}
-                </button>
-              </form>
+              </div>
             </div>
             <Email isOpen={isOpen} close={close} />
           </div>
-      <MapComponent/>
         </div>
       </NavFootLayout>
     </div>
