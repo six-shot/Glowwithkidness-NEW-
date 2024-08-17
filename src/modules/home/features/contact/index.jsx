@@ -56,18 +56,17 @@ export default function Contact() {
               </h4>
               <div className="flex flex-col ">
                 <h4 className="uppercase text-center mt-7 text-sm font-medium">
-                  monday - thursday
+                  monday
                 </h4>
-                <div className="flex flex-col justify-center items-center mt-3 gap-2 text-center">
-                  <h4>07:00 - 15:00</h4>
-                  <h4>16:00 - 22:00</h4>
+                <div className=" uppercase flex flex-col justify-center items-center mt-3 gap-2 text-center">
+                 closed
                 </div>
                 <h4 className="uppercase text-center mt-7 text-sm font-medium">
-                  friday sunday
+                  tuesday - sunday
                 </h4>
                 <div className="flex flex-col justify-center items-center mt-3 gap-2 text-center">
-                  <h4>07:00 - 15:00</h4>
-                  <h4>16:00 - 22:00</h4>
+                  <h4>08:00am - 08:00pm</h4>
+                  
                 </div>
               </div>
               <div className="flex gap-2 items-center mt-7 bg-white p-2">
