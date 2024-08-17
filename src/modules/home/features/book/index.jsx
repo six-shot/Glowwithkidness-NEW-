@@ -12,7 +12,9 @@ export default function Book() {
       )}
       <iframe
         src="https://glowwithkindness.as.me/schedule.php?hl=en-US&gei=3H6hZoyMDdvckPIP3_vnwAI&rwg_token=AJKvS9W4_m_Da06OjKk0Kh2LkZdIgTVC-Rg-weYNZFwJ8NVu0a5W34XPKzyWbXnrv8pcbnopz-6I0_ut0yalAH6rhMyairzbRA%3D%3D"
-        className={`w-full h-full pb-[10%] border-0 ${loading ? "hidden" : "block"}`}
+        className={`w-full h-full pb-[10%] border-0 ${
+          loading ? "hidden" : "block"
+        } scrollbar-custom`}
         scrolling="auto" // Use 'auto' to allow scrolling when needed
         allowFullScreen
         onLoad={() => setLoading(false)}
