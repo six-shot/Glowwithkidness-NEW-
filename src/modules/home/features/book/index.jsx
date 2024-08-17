@@ -6,7 +6,7 @@ export default function Book() {
   return (
     <div className="h-screen w-full flex flex-col overflow-hidden">
       {loading && (
-        <div className="loader flex justify-center items-center h-full">
+        <div className="loader flex justify-center  ">
           <p>Loading...</p>
         </div>
       )}
